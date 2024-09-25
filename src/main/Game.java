@@ -19,7 +19,7 @@ public class Game {
 		
 		gamePanel = new GamePanel();
 		gameWindow = new GameWindow(gamePanel);
-		gamePanel.requestFocus();
+		gamePanel.requestFocus(); //input focus on this gamePanel
 		
 	}
 	
