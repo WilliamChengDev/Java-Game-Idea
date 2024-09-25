@@ -2,6 +2,8 @@ package main;
 
 import java.awt.Graphics;
 import javax.swing.JPanel;
+import inputs.KeyboardInputs;
+
 
 /**
  * GamePanel is an extension of a JPanel object that allows 
@@ -13,10 +15,14 @@ import javax.swing.JPanel;
 public class GamePanel extends JPanel {
 	
 	/**
-	 * Default constructor for GamePanel, however, 
-	 * the JPanel constructor paintComponent is used instead.
+	 * Default constructor for GamePanel. Initializes key listeners.
+	 * Graphics are initialized separately in paintComponent,
+	 * JPanel's own constructor.
 	 */
 	public GamePanel() {
+		
+		/*adds a key listener to the JPanel, takes KeyListener*/
+		addKeyListener(new KeyboardInputs()); //from inputs package
 		
 	}
 
