@@ -28,7 +28,7 @@ public class GameWindow extends JFrame {
 		this.add(gamePanel); //attaches gamePanel to gameFrame
 		this.setTitle(GAME_TITLE); //set window title
 		/*setVisible MUST be at the bottom*/
-		this.setVisible(true); //show window
+		this.setVisible(true); //show window 
 		
 	}
 	

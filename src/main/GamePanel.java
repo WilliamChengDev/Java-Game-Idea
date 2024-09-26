@@ -26,15 +26,15 @@ public class GamePanel extends JPanel {
 	 * JPanel's own constructor.
 	 */
 	public GamePanel() {
-		xDelta = 0;
-		yDelta = 0;
+		xDelta = 100;
+		yDelta = 100;
 		
 		/*adds a key listener to the JPanel, takes KeyListener*/
 		keyboardInputs = new KeyboardInputs(this); //from inputs package
 		addKeyListener(keyboardInputs);
 		
 		/*adds a mouse and mouse motion listener to JPanel*/
-		mouseInputs = new MouseInputs();//from inputs package
+		mouseInputs = new MouseInputs(this);//from inputs package
 		addMouseListener(mouseInputs);
 		addMouseMotionListener(mouseInputs);
 		
@@ -73,6 +73,17 @@ public class GamePanel extends JPanel {
 	public int getYDelta() {
 		return this.yDelta;
 	}
+	
+	/**
+	 * sets the position of the rectangle to a coordinate
+	 * @param x
+	 * @param y
+	 */
+	public void setRectPos(int x, int y) {
+		this.xDelta = x;
+		this.yDelta = y;
+		repaint();
+	}
 
 	/**
 	 * Called on initialization of JPanel, used to draw  items
@@ -86,7 +97,7 @@ public class GamePanel extends JPanel {
 		 * object to take care of initialization.*/
 		super.paintComponent(g);
 		
-		g.fillRect(100 + xDelta, 100 + yDelta, 200, 50);
+		g.fillRect(xDelta, yDelta, 200, 50);
 	}
 	
 }

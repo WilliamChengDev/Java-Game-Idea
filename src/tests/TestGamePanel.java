@@ -24,8 +24,8 @@ class TestGamePanel {
 	
 	@Test 
 	void testGamePanel() {
-		assertEquals(0, gamePanel.getXDelta(), "xDelta was not set to 0");
-		assertEquals(0, gamePanel.getYDelta(), "yDelta was not set to 0");
+		assertEquals(100, gamePanel.getXDelta(), "xDelta was not set to 100");
+		assertEquals(100, gamePanel.getYDelta(), "yDelta was not set to 100");
 	}
 
 	@Test
