@@ -18,12 +18,10 @@ public class Game implements Runnable{
 	 * Constructor for the game, creates JPanel and JFrame 
 	 */
 	public Game() {
-		
 		gamePanel = new GamePanel();
 		gameWindow = new GameWindow(gamePanel);
 		gamePanel.requestFocus(); //input focus on this gamePanel
 		startGameLoop();
-		
 	}
 	
 	/**

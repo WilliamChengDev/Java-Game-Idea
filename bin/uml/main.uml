@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_2s67AJYxEe-AgeNUI4u5hQ" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_2s67AZYxEe-AgeNUI4u5hQ" source="codegen">
         <details xmi:id="_2s67ApYxEe-AgeNUI4u5hQ" key="codegenDirectory" value="/gameProject/src"/>
-        <details xmi:id="_5Px5UJYxEe-AgeNUI4u5hQ" key="AssociatedSourceCode" value="/gameProject/src/inputs/KeyboardInputs.java;1075933680/1;/gameProject/src/inputs/MouseInputs.java;2366548676/1;/gameProject/src/main/Game.java;7267172/1;/gameProject/src/main/GamePanel.java;1930651213/1;/gameProject/src/main/GameWindow.java;2049225474/1;/gameProject/src/main/MainClass.java;710227733/1;"/>
+        <details xmi:id="_5Px5UJYxEe-AgeNUI4u5hQ" key="AssociatedSourceCode" value="/gameProject/src/inputs/KeyboardInputs.java;3845243825/1;/gameProject/src/inputs/MouseInputs.java;2366548676/1;/gameProject/src/main/Game.java;3962721913/1;/gameProject/src/main/GamePanel.java;606503034/1;/gameProject/src/main/GameWindow.java;3352340067/1;/gameProject/src/main/MainClass.java;710227733/1;/gameProject/src/main/Images.java;488943194/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_2yjB4JYxEe-AgeNUI4u5hQ">
@@ -45,15 +45,26 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_2zp1IJYxEe-AgeNUI4u5hQ" name="Color"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_2zqcMZYxEe-AgeNUI4u5hQ" name="Graphics"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DECr4JY2Ee-AgeNUI4u5hQ" name="Dimension"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_H4j_QJZAEe-AgeNUI4u5hQ" name="image">
+          <packagedElement xmi:type="uml:Class" xmi:id="_H4npoJZAEe-AgeNUI4u5hQ" name="BufferedImage"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_2z1bUJYxEe-AgeNUI4u5hQ" name="lang">
         <packagedElement xmi:type="uml:Interface" xmi:id="_2z1bUZYxEe-AgeNUI4u5hQ" name="Runnable"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_2z2CYJYxEe-AgeNUI4u5hQ" name="Thread"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Z03MwJZAEe-AgeNUI4u5hQ" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Z063IJZAEe-AgeNUI4u5hQ" name="InputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_gtss0JZAEe-AgeNUI4u5hQ" name="IOException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_C3Da8JZFEe-AgeNUI4u5hQ" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_C3NzAJZFEe-AgeNUI4u5hQ" name="HashMap"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_2yleIZYxEe-AgeNUI4u5hQ" name="main">
       <packagedElement xmi:type="uml:Class" xmi:id="_2zCxIJYxEe-AgeNUI4u5hQ" name="Game">
-        <ownedComment xmi:id="_20C2u5YxEe-AgeNUI4u5hQ">
+        <ownedComment xmi:id="_Rh2qMJY_Ee-AgeNUI4u5hQ">
           <body>Constructs the game, and brings together components of the
 game to one place.
 
@@ -69,13 +80,14 @@ game to one place.
         </ownedAttribute>
         <interfaceRealization xmi:id="_2z1bU5YxEe-AgeNUI4u5hQ" client="_2zCxIJYxEe-AgeNUI4u5hQ" supplier="_2z1bUZYxEe-AgeNUI4u5hQ" contract="_2z1bUZYxEe-AgeNUI4u5hQ"/>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20CPpZYxEe-AgeNUI4u5hQ" name="Game" specification="_2zDYMJYxEe-AgeNUI4u5hQ">
-          <ownedParameter xmi:id="_20CPppYxEe-AgeNUI4u5hQ" type="_2zCxIJYxEe-AgeNUI4u5hQ" direction="return"/>
+          <ownedParameter xmi:id="_20CPppYxEe-AgeNUI4u5hQ" type="_2zCxIJYxEe-AgeNUI4u5hQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>gamePanel = new GamePanel();
 		gameWindow = new GameWindow(gamePanel);
 		gamePanel.requestFocus(); //input focus on this gamePanel
 		startGameLoop();
-		
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20CPp5YxEe-AgeNUI4u5hQ" name="startGameLoop" specification="_2zD_Q5YxEe-AgeNUI4u5hQ">
@@ -123,20 +135,20 @@ game to one place.
           <eAnnotations xmi:id="_2zD_QJYxEe-AgeNUI4u5hQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_2zD_QZYxEe-AgeNUI4u5hQ" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_20C2vJYxEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_Rh2qMZY_Ee-AgeNUI4u5hQ">
             <body>Constructor for the game, creates JPanel and JFrame</body>
           </ownedComment>
           <ownedParameter xmi:id="_2zD_QpYxEe-AgeNUI4u5hQ" type="_2zCxIJYxEe-AgeNUI4u5hQ" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_2zD_Q5YxEe-AgeNUI4u5hQ" name="startGameLoop" visibility="private" method="_20CPp5YxEe-AgeNUI4u5hQ">
-          <ownedComment xmi:id="_20C2vZYxEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_Rh2qMpY_Ee-AgeNUI4u5hQ">
             <body>starts the game loop a new thread gameThread</body>
           </ownedComment>
         </ownedOperation>
         <ownedOperation xmi:id="_2zD_RJYxEe-AgeNUI4u5hQ" name="run" method="_20CPqJYxEe-AgeNUI4u5hQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_2zF0cJYxEe-AgeNUI4u5hQ" name="GamePanel">
-        <ownedComment xmi:id="_20C2vpYxEe-AgeNUI4u5hQ">
+        <ownedComment xmi:id="_JgL40JZKEe-AgeNUI4u5hQ">
           <body>GamePanel is an extension of a JPanel object that allows 
 for objects to be painted on the screen. For GamePanel to
 show, it has to be added to a GameWindow first.
@@ -146,34 +158,14 @@ show, it has to be added to a GameWindow first.
         <generalization xmi:id="_2z2pc5YxEe-AgeNUI4u5hQ" general="_2zqcM5YxEe-AgeNUI4u5hQ"/>
         <ownedAttribute xmi:id="_2z5FspYxEe-AgeNUI4u5hQ" name="mouseInputs" visibility="private" type="_2zAU4JYxEe-AgeNUI4u5hQ" association="_20HIJJYxEe-AgeNUI4u5hQ"/>
         <ownedAttribute xmi:id="_2z5FtJYxEe-AgeNUI4u5hQ" name="keyboardInputs" visibility="private" type="_2y8DcJYxEe-AgeNUI4u5hQ" association="_20HvMJYxEe-AgeNUI4u5hQ"/>
-        <ownedAttribute xmi:id="_2z5FtpYxEe-AgeNUI4u5hQ" name="xDelta" isReadOnly="true">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_2z5swJYxEe-AgeNUI4u5hQ" name="yDelta" isReadOnly="true">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_2z5swZYxEe-AgeNUI4u5hQ" name="xDir" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_2z5swpYxEe-AgeNUI4u5hQ" value="1f"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_2z5sxJYxEe-AgeNUI4u5hQ" name="yDir" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_2z5sxZYxEe-AgeNUI4u5hQ" value="1f"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_2z5sx5YxEe-AgeNUI4u5hQ" name="frames" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_2z5syZYxEe-AgeNUI4u5hQ" name="lastCheck" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_2z5sy5YxEe-AgeNUI4u5hQ" name="rectColor" visibility="private" type="_2zp1IJYxEe-AgeNUI4u5hQ" association="_20HvM5YxEe-AgeNUI4u5hQ">
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_2z6T0JYxEe-AgeNUI4u5hQ" value="new Color(168, 60, 77)"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:id="_6T2gQJZDEe-AgeNUI4u5hQ" name="imgAssets" visibility="private" type="_mLENEJZDEe-AgeNUI4u5hQ" association="_6T3HUJZDEe-AgeNUI4u5hQ"/>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20CPqZYxEe-AgeNUI4u5hQ" name="GamePanel" specification="_2zHCkJYxEe-AgeNUI4u5hQ">
-          <ownedParameter xmi:id="_20CPqpYxEe-AgeNUI4u5hQ" type="_2zF0cJYxEe-AgeNUI4u5hQ" direction="return"/>
+          <ownedParameter xmi:id="_20CPqpYxEe-AgeNUI4u5hQ" type="_2zF0cJYxEe-AgeNUI4u5hQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
-          <body>xDelta = 100;
-		yDelta = 100;
+          <body>this.setPanelSize();
+		imgAssets = new Images();
 		
 		/*adds a key listener to the JPanel, takes KeyListener*/
 		keyboardInputs = new KeyboardInputs(this); //from inputs package
@@ -186,146 +178,56 @@ show, it has to be added to a GameWindow first.
 		
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20CPq5YxEe-AgeNUI4u5hQ" name="changeXDelta" specification="_2zHClJYxEe-AgeNUI4u5hQ">
-          <ownedParameter xmi:id="_20CPrJYxEe-AgeNUI4u5hQ" name="value">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-          <language>java</language>
-          <body>xDelta += value;
-	</body>
-        </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20CPrZYxEe-AgeNUI4u5hQ" name="changeYDelta" specification="_2zHClpYxEe-AgeNUI4u5hQ">
-          <ownedParameter xmi:id="_20CPrpYxEe-AgeNUI4u5hQ" name="value">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-          <language>java</language>
-          <body>yDelta += value;
-	</body>
-        </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20CPr5YxEe-AgeNUI4u5hQ" name="setRectPos" specification="_2zHpoJYxEe-AgeNUI4u5hQ">
-          <ownedParameter xmi:id="_20CPsJYxEe-AgeNUI4u5hQ" name="x">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-          <ownedParameter xmi:id="_20CPsZYxEe-AgeNUI4u5hQ" name="y">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-          <language>java</language>
-          <body>this.xDelta = x;
-		this.yDelta = y;
-	</body>
-        </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20CPspYxEe-AgeNUI4u5hQ" name="paintComponent" specification="_2z2pcJYxEe-AgeNUI4u5hQ">
           <ownedParameter xmi:id="_20CPs5YxEe-AgeNUI4u5hQ" name="g" type="_2zqcMZYxEe-AgeNUI4u5hQ"/>
           <language>java</language>
           <body>/*Calls JPanel's (super method) own paintComponent 
 		 * object to take care of initialization.*/
 		super.paintComponent(g);
-		
-		updateRectangle(); //update rect position
-		g.setColor(rectColor);
-		g.fillRect((int) xDelta, (int) yDelta, 200, 50);
-	
+		/* img, xpos, ypos, width, height, observer */
+		g.drawImage(imgAssets.getImg(&quot;/player_sprites.png(5,3)&quot;), 
+					0, 0, 128, 80, null);
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20C2sJYxEe-AgeNUI4u5hQ" name="updateRectangle" specification="_2zHpo5YxEe-AgeNUI4u5hQ">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_93YZwJY1Ee-AgeNUI4u5hQ" name="setPanelSize" specification="_0BWv0JY1Ee-AgeNUI4u5hQ">
           <language>java</language>
-          <body>xDelta += xDir;
-		/*
-		 * reverses the x direction rectangle is moving in when
-		 * rectangle goes out of screen.
-		 */
-		if(xDelta > 400 || xDelta &lt; 0) {
-			xDir *= -1;
-			rectColor = getRndColor();
-		}
-		/*
-		 * reverses the y direction rectangle is moving in when
-		 * rectangle goes out of screen.
-		 */
-		yDelta += yDir;
-		if(yDelta > 400 || yDelta &lt; 0) {
-			yDir *= -1;
-			rectColor = getRndColor();
-		}
-	</body>
-        </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20C2sZYxEe-AgeNUI4u5hQ" name="getRndColor" specification="_2zHppJYxEe-AgeNUI4u5hQ">
-          <ownedParameter xmi:id="_20C2spYxEe-AgeNUI4u5hQ" type="_2zp1IJYxEe-AgeNUI4u5hQ" direction="return"/>
-          <language>java</language>
-          <body>Color rndColor = new Color(
-				(int) (Math.random()*255), 
-				(int) (Math.random()*255), 
-				(int) (Math.random()*255)
-				);
-		return rndColor;
+          <body>Dimension size = new Dimension(1280, 800); //resolution for 32 bit
+		this.setMinimumSize(size); //only takes dimension object
+		this.setMaximumSize(size);
+		this.setPreferredSize(size);
 	</body>
         </ownedBehavior>
         <ownedOperation xmi:id="_2zHCkJYxEe-AgeNUI4u5hQ" name="GamePanel" method="_20CPqZYxEe-AgeNUI4u5hQ">
           <eAnnotations xmi:id="_2zHCkZYxEe-AgeNUI4u5hQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_2zHCkpYxEe-AgeNUI4u5hQ" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_20C2v5YxEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_JgL40ZZKEe-AgeNUI4u5hQ">
             <body>Default constructor for GamePanel. Initializes input listeners.
 	 * Graphics are initialized separately in paintComponent,
 	 * JPanel's own constructor.</body>
           </ownedComment>
           <ownedParameter xmi:id="_2zHCk5YxEe-AgeNUI4u5hQ" type="_2zF0cJYxEe-AgeNUI4u5hQ" direction="return"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_2zHClJYxEe-AgeNUI4u5hQ" name="changeXDelta" method="_20CPq5YxEe-AgeNUI4u5hQ">
-          <ownedComment xmi:id="_20C2wJYxEe-AgeNUI4u5hQ">
-            <body>changes the xDelta by some value
-	 * @param value</body>
-          </ownedComment>
-          <ownedParameter xmi:id="_2zHClZYxEe-AgeNUI4u5hQ" name="value">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-        </ownedOperation>
-        <ownedOperation xmi:id="_2zHClpYxEe-AgeNUI4u5hQ" name="changeYDelta" method="_20CPrZYxEe-AgeNUI4u5hQ">
-          <ownedComment xmi:id="_20C2wZYxEe-AgeNUI4u5hQ">
-            <body>changes the yDelta by some value
-	 * @param value</body>
-          </ownedComment>
-          <ownedParameter xmi:id="_2zHCl5YxEe-AgeNUI4u5hQ" name="value">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-        </ownedOperation>
-        <ownedOperation xmi:id="_2zHpoJYxEe-AgeNUI4u5hQ" name="setRectPos" method="_20CPr5YxEe-AgeNUI4u5hQ">
-          <ownedComment xmi:id="_20DdwJYxEe-AgeNUI4u5hQ">
-            <body>sets the position of the rectangle to a coordinate
-	 * @param x
-	 * @param y</body>
-          </ownedComment>
-          <ownedParameter xmi:id="_2zHpoZYxEe-AgeNUI4u5hQ" name="x">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-          <ownedParameter xmi:id="_2zHpopYxEe-AgeNUI4u5hQ" name="y">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-        </ownedOperation>
-        <ownedOperation xmi:id="_2zHpo5YxEe-AgeNUI4u5hQ" name="updateRectangle" visibility="private" method="_20C2sJYxEe-AgeNUI4u5hQ">
-          <ownedComment xmi:id="_20DdwpYxEe-AgeNUI4u5hQ">
-            <body>updates the position of the rectangle per refresh</body>
-          </ownedComment>
-        </ownedOperation>
-        <ownedOperation xmi:id="_2zHppJYxEe-AgeNUI4u5hQ" name="getRndColor" visibility="private" method="_20C2sZYxEe-AgeNUI4u5hQ">
-          <ownedComment xmi:id="_20Ddw5YxEe-AgeNUI4u5hQ">
-            <body>returns a Color object with a random rgb value</body>
-          </ownedComment>
-          <ownedParameter xmi:id="_2z2pcpYxEe-AgeNUI4u5hQ" type="_2zp1IJYxEe-AgeNUI4u5hQ" direction="return"/>
-        </ownedOperation>
         <ownedOperation xmi:id="_2z2pcJYxEe-AgeNUI4u5hQ" name="paintComponent" method="_20CPspYxEe-AgeNUI4u5hQ">
-          <ownedComment xmi:id="_20DdwZYxEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_JgL405ZKEe-AgeNUI4u5hQ">
             <body>Called on initialization of JPanel, used to draw  items
 	 * on the screen. Graphics component allows us to draw to
-	 * the panel.
+	 * the panel. Method used to update the game panel!! 
 	 * 
 	 * @param Graphics object</body>
           </ownedComment>
           <ownedParameter xmi:id="_2z2pcZYxEe-AgeNUI4u5hQ" name="g" type="_2zqcMZYxEe-AgeNUI4u5hQ"/>
         </ownedOperation>
+        <ownedOperation xmi:id="_0BWv0JY1Ee-AgeNUI4u5hQ" name="setPanelSize" visibility="private" method="_93YZwJY1Ee-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_JgL40pZKEe-AgeNUI4u5hQ">
+            <body>Sets the size of the JPanel object, not setting window size in 
+	 * JFrame since that will include the top bar height if initialized
+	 * in JFrame.</body>
+          </ownedComment>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_2zI3wJYxEe-AgeNUI4u5hQ" name="GameWindow">
-        <ownedComment xmi:id="_20DdxJYxEe-AgeNUI4u5hQ">
+        <ownedComment xmi:id="_dMvkAJY_Ee-AgeNUI4u5hQ">
           <body>GameWindow class provides a frame using JFrame to house a 
 GamePanel object. Also initializes settings such as screen
 resolution, and additional window settings.
@@ -333,26 +235,21 @@ resolution, and additional window settings.
 @author williamcheng</body>
         </ownedComment>
         <generalization xmi:id="_2z3QgJYxEe-AgeNUI4u5hQ" general="_2zsRYJYxEe-AgeNUI4u5hQ"/>
-        <ownedAttribute xmi:id="_2z6T0pYxEe-AgeNUI4u5hQ" name="SCREEN_WIDTH" isStatic="true">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_2z6T1JYxEe-AgeNUI4u5hQ" value="400"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_2z6T1ZYxEe-AgeNUI4u5hQ" name="SCREEN_HEIGHT" visibility="private" isStatic="true">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_2z6T1pYxEe-AgeNUI4u5hQ" value="400"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_2z6T2JYxEe-AgeNUI4u5hQ" name="GAME_TITLE" isStatic="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_2z664ZYxEe-AgeNUI4u5hQ" value="&quot;2D Game&quot;"/>
         </ownedAttribute>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20C2s5YxEe-AgeNUI4u5hQ" name="GameWindow" specification="_2zs4cJYxEe-AgeNUI4u5hQ">
           <ownedParameter xmi:id="_20C2tJYxEe-AgeNUI4u5hQ" name="gamePanel" type="_2zF0cJYxEe-AgeNUI4u5hQ"/>
-          <ownedParameter xmi:id="_20C2tZYxEe-AgeNUI4u5hQ" type="_2zI3wJYxEe-AgeNUI4u5hQ" direction="return"/>
+          <ownedParameter xmi:id="_20C2tZYxEe-AgeNUI4u5hQ" type="_2zI3wJYxEe-AgeNUI4u5hQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
-          <body>this.setSize(SCREEN_WIDTH, SCREEN_HEIGHT); //400x400 resolution
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+          <body>this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.add(gamePanel); //attaches gamePanel to gameFrame
 		this.setTitle(GAME_TITLE); //set window title
+		this.pack(); //fit size to preferred
+		this.setResizable(false);
 		/*setVisible MUST be at the bottom*/
 		this.setVisible(true); //show window 
 		
@@ -362,12 +259,6 @@ resolution, and additional window settings.
           <eAnnotations xmi:id="_2zs4cpYxEe-AgeNUI4u5hQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_2zs4c5YxEe-AgeNUI4u5hQ" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_20DdxZYxEe-AgeNUI4u5hQ">
-            <body>constructor for GameWindow, initializes screen 
-	 * resolution and additional settings by constants set. 
-	 * 
-	 * @param gamePanel</body>
-          </ownedComment>
           <ownedParameter xmi:id="_2zs4cZYxEe-AgeNUI4u5hQ" name="gamePanel" type="_2zF0cJYxEe-AgeNUI4u5hQ"/>
           <ownedParameter xmi:id="_2zs4dJYxEe-AgeNUI4u5hQ" type="_2zI3wJYxEe-AgeNUI4u5hQ" direction="return"/>
         </ownedOperation>
@@ -409,13 +300,220 @@ resolution, and additional window settings.
       <packagedElement xmi:type="uml:Association" xmi:id="_20HvMJYxEe-AgeNUI4u5hQ" name="" memberEnd="_20HvMZYxEe-AgeNUI4u5hQ _2z5FtJYxEe-AgeNUI4u5hQ">
         <ownedEnd xmi:id="_20HvMZYxEe-AgeNUI4u5hQ" name="" type="_2zF0cJYxEe-AgeNUI4u5hQ" association="_20HvMJYxEe-AgeNUI4u5hQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_20HvM5YxEe-AgeNUI4u5hQ" name="" memberEnd="_20HvNJYxEe-AgeNUI4u5hQ _2z5sy5YxEe-AgeNUI4u5hQ">
-        <ownedEnd xmi:id="_20HvNJYxEe-AgeNUI4u5hQ" name="" type="_2zF0cJYxEe-AgeNUI4u5hQ" association="_20HvM5YxEe-AgeNUI4u5hQ"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mLENEJZDEe-AgeNUI4u5hQ" name="Images">
+        <ownedComment xmi:id="_9Q6fkJZJEe-AgeNUI4u5hQ">
+          <body>Object to contain and sort all of the image assets in the game
+
+@author williamcheng</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_C3OaEJZFEe-AgeNUI4u5hQ" name="imageCollection" visibility="private" type="_C3NzAJZFEe-AgeNUI4u5hQ" association="_C3QPQJZFEe-AgeNUI4u5hQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C3PBIZZFEe-AgeNUI4u5hQ" name="Images" specification="_C3ITcJZFEe-AgeNUI4u5hQ">
+          <ownedParameter xmi:id="_C3PBIpZFEe-AgeNUI4u5hQ" type="_mLENEJZDEe-AgeNUI4u5hQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>imageCollection = new HashMap&lt;String, BufferedImage>();
+		this.addSpriteSheet(&quot;/player_sprites.png&quot;, 
+							64, 40, 9, 6); //64x40 based sheet
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C3PBJZZFEe-AgeNUI4u5hQ" name="removeImage" specification="_C3ITdpZFEe-AgeNUI4u5hQ">
+          <ownedParameter xmi:id="_C3PBJpZFEe-AgeNUI4u5hQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>imageCollection.remove(name);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4f5H95ZGEe-AgeNUI4u5hQ" name="getImg" specification="_4f4g4JZGEe-AgeNUI4u5hQ">
+          <ownedParameter xmi:id="_4f5H-JZGEe-AgeNUI4u5hQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H-ZZGEe-AgeNUI4u5hQ" type="_H4npoJZAEe-AgeNUI4u5hQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (imageCollection.containsKey(name)){
+			return imageCollection.get(name);
+		} else {
+			return null;
+		}
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4f5H-pZGEe-AgeNUI4u5hQ" name="getSubImg" specification="_4f5H8JZGEe-AgeNUI4u5hQ">
+          <ownedParameter xmi:id="_4f5H-5ZGEe-AgeNUI4u5hQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H_JZGEe-AgeNUI4u5hQ" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H_ZZGEe-AgeNUI4u5hQ" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H_pZGEe-AgeNUI4u5hQ" name="w">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H_5ZGEe-AgeNUI4u5hQ" name="h">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5IAJZGEe-AgeNUI4u5hQ" type="_H4npoJZAEe-AgeNUI4u5hQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (imageCollection.containsKey(name)){
+			return imageCollection.get(name).getSubimage(x, y, w, h);
+		} else {
+			return null;
+		} 
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hgCrkJZHEe-AgeNUI4u5hQ" name="addImg" specification="_hgCEgJZHEe-AgeNUI4u5hQ">
+          <ownedParameter xmi:id="_hgCrkZZHEe-AgeNUI4u5hQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>InputStream is = getClass().getResourceAsStream(&quot;/player_sprites.png&quot;);
+		BufferedImage img;
+		/* must use try/catch when reading image, as it might fail */
+		try {
+			img = ImageIO.read(is);
+		} catch (IOException e) {
+			e.printStackTrace();
+			/* img defaults to null if error */
+			img = null;
+		}
+		imageCollection.put(name, img);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RSSOFJZIEe-AgeNUI4u5hQ" name="addSpriteSheet" specification="_RSRnAJZIEe-AgeNUI4u5hQ">
+          <ownedParameter xmi:id="_RSSOFZZIEe-AgeNUI4u5hQ" name="imgName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RSSOFpZIEe-AgeNUI4u5hQ" name="width">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RSSOF5ZIEe-AgeNUI4u5hQ" name="height">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RSSOGJZIEe-AgeNUI4u5hQ" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RSSOGZZIEe-AgeNUI4u5hQ" name="col">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.addImg(imgName);
+		BufferedImage sheet = this.getImg(imgName);
+		
+		for(int r = 0; r &lt; row; r++) {
+			for(int c = 0; c &lt; col; c++) {
+				imageCollection.put(imgName+ &quot;(&quot; + r + &quot;,&quot; + c + &quot;)&quot;, 
+						sheet.getSubimage(c*64, r*40, width, height));
+			}
+		}
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_C3ITcJZFEe-AgeNUI4u5hQ" name="Images" method="_C3PBIZZFEe-AgeNUI4u5hQ">
+          <eAnnotations xmi:id="_C3ITcZZFEe-AgeNUI4u5hQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_C3ITcpZFEe-AgeNUI4u5hQ" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_9Q6fkZZJEe-AgeNUI4u5hQ">
+            <body>Constructor for Images, load all images here</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_C3ITc5ZFEe-AgeNUI4u5hQ" type="_mLENEJZDEe-AgeNUI4u5hQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C3ITdpZFEe-AgeNUI4u5hQ" name="removeImage" method="_C3PBJZZFEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_9Q6flJZJEe-AgeNUI4u5hQ">
+            <body>removes an image resource from the collection with the name
+	 * 
+	 * @param name</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_C3ITd5ZFEe-AgeNUI4u5hQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_4f4g4JZGEe-AgeNUI4u5hQ" name="getImg" method="_4f5H95ZGEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_9Q6flZZJEe-AgeNUI4u5hQ">
+            <body>gets the whole image resource associated with the name
+	 * 
+	 * @param name
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_4f4g4ZZGEe-AgeNUI4u5hQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f4g4pZGEe-AgeNUI4u5hQ" type="_H4npoJZAEe-AgeNUI4u5hQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_4f5H8JZGEe-AgeNUI4u5hQ" name="getSubImg" method="_4f5H-pZGEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_9Q6flpZJEe-AgeNUI4u5hQ">
+            <body>gets a section of the image resource associated with the name
+	 * @param name
+	 * @param x x position of top left corner of sub image
+	 * @param y y position of top left corner of sub image
+	 * @param w width of sub image
+	 * @param h height of sub image
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_4f5H8ZZGEe-AgeNUI4u5hQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H8pZGEe-AgeNUI4u5hQ" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H85ZGEe-AgeNUI4u5hQ" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H9JZGEe-AgeNUI4u5hQ" name="w">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H9ZZGEe-AgeNUI4u5hQ" name="h">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_4f5H9pZGEe-AgeNUI4u5hQ" type="_H4npoJZAEe-AgeNUI4u5hQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_hgCEgJZHEe-AgeNUI4u5hQ" name="addImg" method="_hgCrkJZHEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_9Q6fk5ZJEe-AgeNUI4u5hQ">
+            <body>adds an image to the collection, finds the file with filename name,
+	 * and automatically imports the image to the collection.
+	 * 
+	 * @param name</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_hgCEgZZHEe-AgeNUI4u5hQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RSRnAJZIEe-AgeNUI4u5hQ" name="addSpriteSheet" visibility="private" method="_RSSOFJZIEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_9Q6fkpZJEe-AgeNUI4u5hQ">
+            <body>Loads an entire sprite sheet into images, and automatically separates all sprites
+	 * into separate assets</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_RSRnAZZIEe-AgeNUI4u5hQ" name="imgName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RSSOEJZIEe-AgeNUI4u5hQ" name="width">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RSSOEZZIEe-AgeNUI4u5hQ" name="height">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RSSOEpZIEe-AgeNUI4u5hQ" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RSSOE5ZIEe-AgeNUI4u5hQ" name="col">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_6T3HUJZDEe-AgeNUI4u5hQ" name="" memberEnd="_6T3HUZZDEe-AgeNUI4u5hQ _6T2gQJZDEe-AgeNUI4u5hQ">
+        <ownedEnd xmi:id="_6T3HUZZDEe-AgeNUI4u5hQ" name="" type="_2zF0cJYxEe-AgeNUI4u5hQ" association="_6T3HUJZDEe-AgeNUI4u5hQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_C3QPQJZFEe-AgeNUI4u5hQ" name="" memberEnd="_C3QPQZZFEe-AgeNUI4u5hQ _C3OaEJZFEe-AgeNUI4u5hQ">
+        <ownedEnd xmi:id="_C3QPQZZFEe-AgeNUI4u5hQ" name="" type="_mLENEJZDEe-AgeNUI4u5hQ" association="_C3QPQJZFEe-AgeNUI4u5hQ"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_2yohcJYxEe-AgeNUI4u5hQ" name="inputs">
       <packagedElement xmi:type="uml:Class" xmi:id="_2y8DcJYxEe-AgeNUI4u5hQ" name="KeyboardInputs">
-        <ownedComment xmi:id="_20C2uZYxEe-AgeNUI4u5hQ">
+        <ownedComment xmi:id="_hHH6cJY1Ee-AgeNUI4u5hQ">
           <body>KeyListener object that listens for different keyboard inputs,
 passed to JPanel objects as KeyListeners.
 
@@ -425,42 +523,18 @@ passed to JPanel objects as KeyListeners.
         <interfaceRealization xmi:id="_2zwi0JYxEe-AgeNUI4u5hQ" client="_2y8DcJYxEe-AgeNUI4u5hQ" supplier="_2zljsZYxEe-AgeNUI4u5hQ" contract="_2zljsZYxEe-AgeNUI4u5hQ"/>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2z_zYJYxEe-AgeNUI4u5hQ" name="KeyboardInputs" specification="_2zmKwZYxEe-AgeNUI4u5hQ">
           <ownedParameter xmi:id="_2z_zYZYxEe-AgeNUI4u5hQ" name="gamePanel" type="_2zF0cJYxEe-AgeNUI4u5hQ"/>
-          <ownedParameter xmi:id="_2z_zYpYxEe-AgeNUI4u5hQ" type="_2y8DcJYxEe-AgeNUI4u5hQ" direction="return"/>
+          <ownedParameter xmi:id="_2z_zYpYxEe-AgeNUI4u5hQ" type="_2y8DcJYxEe-AgeNUI4u5hQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>this.gamePanel = gamePanel;
-	</body>
-        </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_20BokJYxEe-AgeNUI4u5hQ" name="keyReleased" specification="_2zxw9ZYxEe-AgeNUI4u5hQ">
-          <ownedParameter xmi:id="_20BokZYxEe-AgeNUI4u5hQ" name="e" type="_2zk8oJYxEe-AgeNUI4u5hQ"/>
-          <language>java</language>
-          <body>switch(e.getKeyCode()) {
-		case KeyEvent.VK_W:
-			System.out.println(&quot;up&quot;);
-			gamePanel.changeYDelta(-5);
-			break;
-		case KeyEvent.VK_A:
-			System.out.println(&quot;left&quot;);
-			gamePanel.changeXDelta(-5);
-			break;
-		case KeyEvent.VK_S:
-			System.out.println(&quot;down&quot;);
-			gamePanel.changeYDelta(5);
-			break;
-		case KeyEvent.VK_D:
-			System.out.println(&quot;right&quot;);
-			gamePanel.changeXDelta(5);
-			break;
-		default:
-			break;
-		}
-		
 	</body>
         </ownedBehavior>
         <ownedOperation xmi:id="_2zmKwZYxEe-AgeNUI4u5hQ" name="KeyboardInputs" method="_2z_zYJYxEe-AgeNUI4u5hQ">
           <eAnnotations xmi:id="_2zmx0JYxEe-AgeNUI4u5hQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_2zmx0ZYxEe-AgeNUI4u5hQ" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_20C2upYxEe-AgeNUI4u5hQ">
+          <ownedComment xmi:id="_hHH6cZY1Ee-AgeNUI4u5hQ">
             <body>constructor for Keyboard Inputs, takes in the gamePanel to access 
 	 * the main gamePanel for the game.
 	 * 
@@ -475,7 +549,7 @@ passed to JPanel objects as KeyListeners.
         <ownedOperation xmi:id="_2zxw8JYxEe-AgeNUI4u5hQ" name="keyPressed">
           <ownedParameter xmi:id="_2zxw8ZYxEe-AgeNUI4u5hQ" name="e" type="_2zk8oJYxEe-AgeNUI4u5hQ"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_2zxw9ZYxEe-AgeNUI4u5hQ" name="keyReleased" method="_20BokJYxEe-AgeNUI4u5hQ">
+        <ownedOperation xmi:id="_2zxw9ZYxEe-AgeNUI4u5hQ" name="keyReleased">
           <ownedParameter xmi:id="_2zxw9pYxEe-AgeNUI4u5hQ" name="e" type="_2zk8oJYxEe-AgeNUI4u5hQ"/>
         </ownedOperation>
       </packagedElement>
@@ -537,6 +611,9 @@ passed to JPanel objects as KeyListeners.
       <packagedElement xmi:type="uml:Package" xmi:id="_2yuoEZYxEe-AgeNUI4u5hQ" name="swing">
         <packagedElement xmi:type="uml:Class" xmi:id="_2zqcM5YxEe-AgeNUI4u5hQ" name="JPanel"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_2zsRYJYxEe-AgeNUI4u5hQ" name="JFrame"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_gtpCcJZAEe-AgeNUI4u5hQ" name="imageio">
+        <packagedElement xmi:type="uml:Class" xmi:id="_gttT4ZZAEe-AgeNUI4u5hQ" name="ImageIO"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_2s8JIJYxEe-AgeNUI4u5hQ">
@@ -612,13 +689,6 @@ passed to JPanel objects as KeyListeners.
   <UMLLabProfile:LegacyStyledElement xmi:id="_2z5FsZYxEe-AgeNUI4u5hQ" base_Element="_2z4ep5YxEe-AgeNUI4u5hQ"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_2z5Fs5YxEe-AgeNUI4u5hQ" base_Element="_2z5FspYxEe-AgeNUI4u5hQ"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_2z5FtZYxEe-AgeNUI4u5hQ" base_Element="_2z5FtJYxEe-AgeNUI4u5hQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_2z5sw5YxEe-AgeNUI4u5hQ" base_Element="_2z5swZYxEe-AgeNUI4u5hQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_2z5sxpYxEe-AgeNUI4u5hQ" base_Element="_2z5sxJYxEe-AgeNUI4u5hQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_2z5syJYxEe-AgeNUI4u5hQ" base_Element="_2z5sx5YxEe-AgeNUI4u5hQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_2z5sypYxEe-AgeNUI4u5hQ" base_Element="_2z5syZYxEe-AgeNUI4u5hQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_2z6T0ZYxEe-AgeNUI4u5hQ" base_Element="_2z5sy5YxEe-AgeNUI4u5hQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_2z6T05YxEe-AgeNUI4u5hQ" base_Element="_2z6T0pYxEe-AgeNUI4u5hQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_2z6T15YxEe-AgeNUI4u5hQ" base_Element="_2z6T1ZYxEe-AgeNUI4u5hQ"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_2z664JYxEe-AgeNUI4u5hQ" base_Element="_2z6T2JYxEe-AgeNUI4u5hQ"/>
   <UMLLabProfile:Reference xmi:id="_20F6ApYxEe-AgeNUI4u5hQ" base_Element="_20F6AJYxEe-AgeNUI4u5hQ"/>
   <UMLLabProfile:Reference xmi:id="_20GhEJYxEe-AgeNUI4u5hQ" base_Element="_20F6A5YxEe-AgeNUI4u5hQ"/>
@@ -627,6 +697,15 @@ passed to JPanel objects as KeyListeners.
   <UMLLabProfile:Reference xmi:id="_20HII5YxEe-AgeNUI4u5hQ" base_Element="_20HIIZYxEe-AgeNUI4u5hQ"/>
   <UMLLabProfile:Reference xmi:id="_20HIJpYxEe-AgeNUI4u5hQ" base_Element="_20HIJJYxEe-AgeNUI4u5hQ"/>
   <UMLLabProfile:Reference xmi:id="_20HvMpYxEe-AgeNUI4u5hQ" base_Element="_20HvMJYxEe-AgeNUI4u5hQ"/>
-  <UMLLabProfile:Reference xmi:id="_20IWQJYxEe-AgeNUI4u5hQ" base_Element="_20HvM5YxEe-AgeNUI4u5hQ"/>
-  <UMLLabProfile:Patch xmi:id="_5PwrMJYxEe-AgeNUI4u5hQ" base_Element="_2zI3wJYxEe-AgeNUI4u5hQ" patchText="@@ -284,22 +284,26 @@&#xA; Frame %7B%0A&#xA;-public&#xA;+%09%0A%09private&#xA;  static &#xA;@@ -404,22 +404,24 @@&#xA;  window%0A&#xA;-public&#xA;+%09private&#xA;  static &#xA;" conflicting="false"/>
+  <UMLLabProfile:Reference xmi:id="_DEDS8JY2Ee-AgeNUI4u5hQ" base_Element="_DECr4JY2Ee-AgeNUI4u5hQ"/>
+  <UMLLabProfile:Reference xmi:id="_H4npoZZAEe-AgeNUI4u5hQ" base_Element="_H4npoJZAEe-AgeNUI4u5hQ"/>
+  <UMLLabProfile:Reference xmi:id="_Z063IZZAEe-AgeNUI4u5hQ" base_Element="_Z063IJZAEe-AgeNUI4u5hQ"/>
+  <UMLLabProfile:Reference xmi:id="_gttT4JZAEe-AgeNUI4u5hQ" base_Element="_gtss0JZAEe-AgeNUI4u5hQ"/>
+  <UMLLabProfile:Reference xmi:id="_gttT4pZAEe-AgeNUI4u5hQ" base_Element="_gttT4ZZAEe-AgeNUI4u5hQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6T2gQZZDEe-AgeNUI4u5hQ" base_Element="_6T2gQJZDEe-AgeNUI4u5hQ"/>
+  <UMLLabProfile:Reference xmi:id="_6T3HUpZDEe-AgeNUI4u5hQ" base_Element="_6T3HUJZDEe-AgeNUI4u5hQ"/>
+  <UMLLabProfile:Reference xmi:id="_C3NzAZZFEe-AgeNUI4u5hQ" base_Element="_C3NzAJZFEe-AgeNUI4u5hQ"/>
+  <UMLLabProfile:Generics xmi:id="_C3OaEZZFEe-AgeNUI4u5hQ" genericsValue="String, BufferedImage" base_Element="_C3OaEJZFEe-AgeNUI4u5hQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_C3PBIJZFEe-AgeNUI4u5hQ" base_Element="_C3OaEJZFEe-AgeNUI4u5hQ"/>
+  <UMLLabProfile:Reference xmi:id="_C3QPQpZFEe-AgeNUI4u5hQ" base_Element="_C3QPQJZFEe-AgeNUI4u5hQ"/>
 </xmi:XMI>

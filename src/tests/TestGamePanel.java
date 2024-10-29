@@ -22,30 +22,4 @@ class TestGamePanel {
 		
 	}
 	
-	@Test 
-	void testGamePanel() {
-		assertEquals(100, gamePanel.getXDelta(), "xDelta was not set to 100");
-		assertEquals(100, gamePanel.getYDelta(), "yDelta was not set to 100");
-	}
-
-	@Test
-	void testChangeXDelta() {
-		
-		gamePanel.changeXDelta(5);
-		assertEquals(5, gamePanel.getXDelta(), "xDelta add was not correct");
-		gamePanel.changeXDelta(-5);
-		assertEquals(0, gamePanel.getXDelta(), "xDelta subtract was not correct");
-		
-	}
-	
-	@Test
-	void testChangeYDelta() {
-		
-		gamePanel.changeYDelta(5);
-		assertEquals(5, gamePanel.getYDelta(), "yDelta add was not correct");
-		gamePanel.changeYDelta(-5);
-		assertEquals(0, gamePanel.getYDelta(), "yDelta subtract was not correct");
-		
-	}
-	
 }

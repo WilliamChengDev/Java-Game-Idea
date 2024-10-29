@@ -39,27 +39,6 @@ public class KeyboardInputs implements KeyListener {
 	@Override
 	public void keyReleased(KeyEvent e) {
 		
-		switch(e.getKeyCode()) {
-		case KeyEvent.VK_W:
-			System.out.println("up");
-			gamePanel.changeYDelta(-5);
-			break;
-		case KeyEvent.VK_A:
-			System.out.println("left");
-			gamePanel.changeXDelta(-5);
-			break;
-		case KeyEvent.VK_S:
-			System.out.println("down");
-			gamePanel.changeYDelta(5);
-			break;
-		case KeyEvent.VK_D:
-			System.out.println("right");
-			gamePanel.changeXDelta(5);
-			break;
-		default:
-			break;
-		}
-		
 	}
 
 }
