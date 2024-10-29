@@ -1,5 +1,6 @@
 package main;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 import inputs.KeyboardInputs;
@@ -17,9 +18,13 @@ public class GamePanel extends JPanel {
 	
 	private MouseInputs mouseInputs; //inputs for the mouse
 	private KeyboardInputs keyboardInputs; //inputs for keys pressed
-	protected int xDelta; //change in x
-	protected int yDelta; //change in y
-	
+	private float xDelta; //change in x
+	private float yDelta; //change in y
+	private float xDir = 1f; //x direction for rect
+	private float yDir = 1f; //y direction for rect
+	private int frames; //fps count
+	private long lastCheck; //last time fps was checked
+	private Color rectColor = new Color(168, 60, 77);	
 	/**
 	 * Default constructor for GamePanel. Initializes input listeners.
 	 * Graphics are initialized separately in paintComponent,
@@ -46,7 +51,6 @@ public class GamePanel extends JPanel {
 	 */
 	public void changeXDelta(int value) {
 		xDelta += value;
-		repaint();
 	}
 	
 	/**
@@ -55,14 +59,13 @@ public class GamePanel extends JPanel {
 	 */
 	public void changeYDelta(int value) {
 		yDelta += value;
-		repaint();
 	}
 	
 	/**
 	 * returns xDelta of GamePanel
 	 * @return
 	 */
-	public int getXDelta() {
+	public float getXDelta() {
 		return this.xDelta;
 	}
 	
@@ -70,7 +73,7 @@ public class GamePanel extends JPanel {
 	 * returns yDelta of GamePanel
 	 * @return
 	 */
-	public int getYDelta() {
+	public float getYDelta() {
 		return this.yDelta;
 	}
 	
@@ -82,7 +85,6 @@ public class GamePanel extends JPanel {
 	public void setRectPos(int x, int y) {
 		this.xDelta = x;
 		this.yDelta = y;
-		repaint();
 	}
 
 	/**
@@ -97,7 +99,46 @@ public class GamePanel extends JPanel {
 		 * object to take care of initialization.*/
 		super.paintComponent(g);
 		
-		g.fillRect(xDelta, yDelta, 200, 50);
+		updateRectangle(); //update rect position
+		g.setColor(rectColor);
+		g.fillRect((int) xDelta, (int) yDelta, 200, 50);
+	
+	}
+
+	/**
+	 * updates the position of the rectangle per refresh
+	 */
+	private void updateRectangle() {
+		xDelta += xDir;
+		/*
+		 * reverses the x direction rectangle is moving in when
+		 * rectangle goes out of screen.
+		 */
+		if(xDelta > 400 || xDelta < 0) {
+			xDir *= -1;
+			rectColor = getRndColor();
+		}
+		/*
+		 * reverses the y direction rectangle is moving in when
+		 * rectangle goes out of screen.
+		 */
+		yDelta += yDir;
+		if(yDelta > 400 || yDelta < 0) {
+			yDir *= -1;
+			rectColor = getRndColor();
+		}
+	}
+
+	/*
+	 * returns a Color object with a random rgb value
+	 */
+	private Color getRndColor() {
+		Color rndColor = new Color(
+				(int) (Math.random()*255), 
+				(int) (Math.random()*255), 
+				(int) (Math.random()*255)
+				);
+		return rndColor;
 	}
 	
 }
