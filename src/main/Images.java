@@ -8,7 +8,7 @@ import java.util.HashMap;
 import javax.imageio.ImageIO;
 
 /**
- * Object to contain and sort all of the image assets in the game
+ * Object to contain and sort a collection of images
  * 
  * @author williamcheng
  */
@@ -20,15 +20,15 @@ public class Images {
 	 */
 	public Images(){
 		imageCollection = new HashMap<String, BufferedImage>();
-		this.addSpriteSheet("/player_sprites.png", 
-							64, 40, 9, 6); //64x40 based sheet
+//		this.addSpriteSheet("/player_sprites.png", 
+//							64, 40, 9, 6); //64x40 based sheet
 	}
 	
 	/**
 	 * Loads an entire sprite sheet into images, and automatically separates all sprites
 	 * into separate assets
 	 */
-	private void addSpriteSheet(String imgName, int width, int height, int row, int col) {
+	public void addSpriteSheet(String imgName, int width, int height, int row, int col) {
 		this.addImg(imgName);
 		BufferedImage sheet = this.getImg(imgName);
 		

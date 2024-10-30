@@ -33,6 +33,13 @@ public class KeyboardInputs implements KeyListener {
 	@Override
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
+		switch (e.getKeyChar()) {
+			case 'a':
+				break;
+			case 'd':
+				break;
+			default:
+		}
 		
 	}
 

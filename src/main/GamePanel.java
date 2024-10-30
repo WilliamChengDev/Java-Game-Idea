@@ -5,6 +5,8 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 import inputs.KeyboardInputs;
 import inputs.MouseInputs;
+import models.Models;
+import models.Sprite;
 
 
 /**
@@ -16,9 +18,9 @@ import inputs.MouseInputs;
  */
 public class GamePanel extends JPanel {
 	
-	private Images imgAssets; //image resources
 	private MouseInputs mouseInputs; //inputs for the mouse
 	private KeyboardInputs keyboardInputs; //inputs for keys pressed
+	private Models models;
 	/**
 	 * Default constructor for GamePanel. Initializes input listeners.
 	 * Graphics are initialized separately in paintComponent,
@@ -26,8 +28,9 @@ public class GamePanel extends JPanel {
 	 */
 	public GamePanel() {
 		
-		this.setPanelSize();
-		imgAssets = new Images();
+		this.setPanelSize(); //set playable area size
+		
+		this.models = new Models(); //load all characters
 		
 		/*adds a key listener to the JPanel, takes KeyListener*/
 		keyboardInputs = new KeyboardInputs(this); //from inputs package
@@ -39,7 +42,7 @@ public class GamePanel extends JPanel {
 		addMouseMotionListener(mouseInputs);
 		
 	}
-
+	
 	/**
 	 * Sets the size of the JPanel object, not setting window size in 
 	 * JFrame since that will include the top bar height if initialized
@@ -64,8 +67,10 @@ public class GamePanel extends JPanel {
 		 * object to take care of initialization.*/
 		super.paintComponent(g);
 		/* img, xpos, ypos, width, height, observer */
-		g.drawImage(imgAssets.getImg("/player_sprites.png(5,3)"), 
-					0, 0, 128, 80, null);
+		g.drawImage(models.getSprite("player").getSkin(), 
+				models.getSprite("player").xPos(), 
+				models.getSprite("player").yPos(),
+				128, 80, null);
 	}
 	
 }
