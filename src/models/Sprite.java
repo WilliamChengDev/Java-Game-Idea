@@ -14,8 +14,8 @@ public class Sprite implements Model{
 	
 	private Images images; //collection of sprites
 	private BufferedImage look; //current look of sprite
-	private int xPos; //position x
-	private int yPos; //position y
+	protected int xPos; //position x
+	protected int yPos; //position y
 	private String name; //name of character
 
 	/**

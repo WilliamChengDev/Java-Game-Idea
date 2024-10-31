@@ -54,6 +54,15 @@ public class GamePanel extends JPanel {
 		this.setMaximumSize(size);
 		this.setPreferredSize(size);
 	}
+	
+	/**
+	 * gets the models; collections of sprites
+	 * 
+	 * @return collection 
+	 */
+	public Models getModels() {
+		return models;
+	}
 
 	/**
 	 * Called on initialization of JPanel, used to draw  items

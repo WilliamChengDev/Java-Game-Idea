@@ -56,6 +56,12 @@ public class Images {
 			e.printStackTrace();
 			/* img defaults to null if error */
 			img = null;
+		} finally {
+			try {
+				is.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 		imageCollection.put(name, img);
 	}

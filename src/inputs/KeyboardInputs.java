@@ -35,8 +35,10 @@ public class KeyboardInputs implements KeyListener {
 		// TODO Auto-generated method stub
 		switch (e.getKeyChar()) {
 			case 'a':
+				gamePanel.getModels().getSprite("player").moveLeft();
 				break;
 			case 'd':
+				gamePanel.getModels().getSprite("player").moveRight();
 				break;
 			default:
 		}
