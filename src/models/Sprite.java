@@ -13,11 +13,11 @@ import main.Images;
 public class Sprite implements Model{
 	
 	private Images images; //collection of sprites
-	private BufferedImage look; //current look of sprite
 	protected int xPos; //position x
 	protected int yPos; //position y
 	private String name; //name of character
-
+	private BufferedImage[] animation; //what animation is playing
+	
 	/**
 	 * constructor for a character, default position 0,0
 	 * 
@@ -58,24 +58,6 @@ public class Sprite implements Model{
 	private void initializeSprites(String spriteSheet) {
 		images = new Images(); //initialize image store
 		images.addSpriteSheet(spriteSheet, 64, 40, 9, 6);
-	}
-	
-	/**
-	 * Sets the appearance of the sprite to a certain look
-	 * 
-	 * @param String name - name of the look
-	 */
-	public void skin(String name) {
-		this.look = images.getImg(name);
-	}
-	
-	/**
-	 * returns the current appearance of the sprite
-	 * 
-	 * @return - BufferedImage object of the current appearance
-	 */
-	public BufferedImage getSkin() {
-		return this.look;
 	}
 	
 	/**
@@ -139,6 +121,22 @@ public class Sprite implements Model{
 	@Override
 	public String getName() {
 		return name;
+	}
+	
+	/**
+	 * sets the state of the character
+	 * @param name - name of the animation
+	 */
+	public void setAni(String name) {
+		this.animation = this.getImages().getAnimation(name);
+	}
+	
+	/**
+	 * returns the animation of the sprite
+	 * @return
+	 */
+	public BufferedImage[] animation() {
+		return animation;
 	}
 	
 }

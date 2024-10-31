@@ -20,7 +20,10 @@ public class GamePanel extends JPanel {
 	
 	private MouseInputs mouseInputs; //inputs for the mouse
 	private KeyboardInputs keyboardInputs; //inputs for keys pressed
-	private Models models;
+	private Models models; //all characters
+	private int aniTick = 0; //1 tick = 1 frame
+	private int aniIndex = 0; //controls which sprite to display
+	private int ANI_SPEED = 20; //contols ticks per update
 	/**
 	 * Default constructor for GamePanel. Initializes input listeners.
 	 * Graphics are initialized separately in paintComponent,
@@ -75,15 +78,21 @@ public class GamePanel extends JPanel {
 		/*Calls JPanel's (super method) own paintComponent 
 		 * object to take care of initialization.*/
 		super.paintComponent(g);
+		updateAnimationTick(); //update ani tick variables
 		/* img, xpos, ypos, width, height, observer */
-//		g.drawImage(models.getSprite("player").getSkin(), 
-//				models.getSprite("player").xPos(), 
-//				models.getSprite("player").yPos(),
-//				128, 80, null);
-		g.drawImage(models.getSprite("player").getImages().getAnimation("idleAni")[4], 
-				models.getSprite("player").xPos(), 
-				models.getSprite("player").yPos(),
-				128, 80, null);
+		g.drawImage(models.getSprite("player").animation()
+						[aniIndex%(models.getSprite("player").animation()).length], 
+					models.getSprite("player").xPos(), 
+					models.getSprite("player").yPos(),
+					128, 80, null);
+	}
+
+	private void updateAnimationTick() {
+		aniTick++;
+		if(aniTick >= ANI_SPEED) {
+			aniTick = 0;
+			aniIndex++;
+		}
 	}
 	
 }

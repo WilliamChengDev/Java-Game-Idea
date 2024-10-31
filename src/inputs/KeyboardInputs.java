@@ -36,9 +36,11 @@ public class KeyboardInputs implements KeyListener {
 		switch (e.getKeyChar()) {
 			case 'a':
 				gamePanel.getModels().getSprite("player").moveLeft();
+				gamePanel.getModels().getSprite("player").setAni("runAni");
 				break;
 			case 'd':
 				gamePanel.getModels().getSprite("player").moveRight();
+				gamePanel.getModels().getSprite("player").setAni("runAni");
 				break;
 			default:
 		}
@@ -47,7 +49,15 @@ public class KeyboardInputs implements KeyListener {
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		
+		switch (e.getKeyChar()) {
+		case 'a':
+			gamePanel.getModels().getSprite("player").setAni("idleAni");
+			break;
+		case 'd':
+			gamePanel.getModels().getSprite("player").setAni("idleAni");
+			break;
+		default:
+	}
 	}
 
 }

@@ -1,7 +1,5 @@
 package models;
 
-import java.awt.image.BufferedImage;
-
 /**
  * Object for the main character of the game
  * 
@@ -9,7 +7,7 @@ import java.awt.image.BufferedImage;
  */
 public class Player extends Sprite{
 	
-	private int SPEED = 5; //movement speed
+	private int SPEED = 10; //movement speed
 	
 	/**
 	 * Constructor for the player, sets up sprite object and loads all states from 
@@ -21,8 +19,8 @@ public class Player extends Sprite{
 	 */
 	public Player(String name, int xPos, int yPos, String spriteSheet) {
 		super(name, xPos, yPos, spriteSheet);
-		this.skin("/player_sprites.png(0,0)");
 		loadAnimations();
+		this.setAni("idleAni"); //default animation on load
 	}
 	
 	/**
@@ -30,6 +28,7 @@ public class Player extends Sprite{
 	 */
 	private void loadAnimations() {
 		this.getImages().createAnimation("/player_sprites.png", "idleAni", 0, 5);
+		this.getImages().createAnimation("/player_sprites.png", "runAni", 1, 6);
 	}
 
 	/**

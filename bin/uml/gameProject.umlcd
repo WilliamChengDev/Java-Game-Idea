@@ -32,31 +32,6 @@
       <cardinality xmi:id="_qM1PyJb7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_qM1PyZb7Ee-KmZ2n8KXWUA" sourceAnchor="306.0,0.0" targetAnchor="46.0,40.0" target="_EVtAoJb9Ee-KmZ2n8KXWUA" source="_qM1P0pb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_osuH6pb7Ee-KmZ2n8KXWUA"/>
-    <visualProperties xmi:id="_EVtnsJb9Ee-KmZ2n8KXWUA" position="179.0,696.0"/>
-    <stereotypes xmi:id="_qM1Pypb7Ee-KmZ2n8KXWUA" name="Reference">
-      <modelElement href="gameProject.uml#_osuH7Jb7Ee-KmZ2n8KXWUA"/>
-    </stereotypes>
-    <nameVisual xmi:id="_qM1Py5b7Ee-KmZ2n8KXWUA" text="">
-      <visualProperties xmi:id="_EbQPApb9Ee-KmZ2n8KXWUA" position="-24.0,-6.0"/>
-    </nameVisual>
-    <sourceRole xmi:id="_qM1PzJb7Ee-KmZ2n8KXWUA" aggregationKind="NONE" name="">
-      <modelElement href="gameProject.uml#_osuH65b7Ee-KmZ2n8KXWUA"/>
-      <visualProperties xmi:id="_EbQPAZb9Ee-KmZ2n8KXWUA" position="41.0,-42.0"/>
-      <visibility xmi:id="_qM1PzZb7Ee-KmZ2n8KXWUA" label="+"/>
-      <cardinality xmi:id="_qM1Pzpb7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
-    </sourceRole>
-    <targetRole xmi:id="_qM1Pz5b7Ee-KmZ2n8KXWUA" aggregationKind="NONE" name="look" navigable="true">
-      <modelElement href="gameProject.uml#_osooUpb7Ee-KmZ2n8KXWUA"/>
-      <visualProperties xmi:id="_EbQPA5b9Ee-KmZ2n8KXWUA" position="-78.0,2.0"/>
-      <stereotypes xmi:id="_ntoH8JczEe-KmZ2n8KXWUA" name="LegacyStyledElement">
-        <modelElement href="gameProject.uml#_osooU5b7Ee-KmZ2n8KXWUA"/>
-      </stereotypes>
-      <visibility xmi:id="_qM1P0Jb7Ee-KmZ2n8KXWUA" label="-"/>
-      <cardinality xmi:id="_qM1P0Zb7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
-    </targetRole>
-  </edges>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qM2d4Zb7Ee-KmZ2n8KXWUA" targetItem="_qM3FDZb7Ee-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qM2d45b7Ee-KmZ2n8KXWUA" targetItem="_qM3FJJb7Ee-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qM3E8Zb7Ee-KmZ2n8KXWUA" targetItem="_qM3FKpb7Ee-KmZ2n8KXWUA"/>
@@ -348,8 +323,6 @@
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ntovA5czEe-KmZ2n8KXWUA" targetItem="_qM3FDZb7Ee-KmZ2n8KXWUA" sourceItem="_ntovApczEe-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ntpWEZczEe-KmZ2n8KXWUA" targetItem="_qM3FJJb7Ee-KmZ2n8KXWUA" sourceItem="_ntpWEJczEe-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ntpWE5czEe-KmZ2n8KXWUA" targetItem="_qM3FKpb7Ee-KmZ2n8KXWUA" sourceItem="_ntpWEpczEe-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ntpWFZczEe-KmZ2n8KXWUA" targetItem="_qM46Mpb7Ee-KmZ2n8KXWUA" sourceItem="_ntpWFJczEe-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ntp9IZczEe-KmZ2n8KXWUA" targetItem="_qM46Opb7Ee-KmZ2n8KXWUA" sourceItem="_ntp9IJczEe-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ntp9IpczEe-KmZ2n8KXWUA" target="_qM8ki5b7Ee-KmZ2n8KXWUA" source="_qM79cJb7Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_nA0sXZczEe-KmZ2n8KXWUA"/>
     <stereotypes xmi:id="_ntqkNJczEe-KmZ2n8KXWUA" name="Reference">
@@ -367,12 +340,6 @@
       <cardinality xmi:id="_ntqkR5czEe-KmZ2n8KXWUA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_WmWMAZc1Ee-KmZ2n8KXWUA" targetItem="_qM1P0pb7Ee-KmZ2n8KXWUA" sourceItem="_WmWMAJc1Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Wmk1gJc1Ee-KmZ2n8KXWUA" targetItem="_qM1P7pb7Ee-KmZ2n8KXWUA" sourceItem="_WmkOcJc1Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_WmrjMJc1Ee-KmZ2n8KXWUA" targetItem="_qM1P-pb7Ee-KmZ2n8KXWUA" sourceItem="_Wmq8IJc1Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Wmt_cZc1Ee-KmZ2n8KXWUA" targetItem="_qM1QDJb7Ee-KmZ2n8KXWUA" sourceItem="_Wmt_cJc1Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Wmxp0Jc1Ee-KmZ2n8KXWUA" targetItem="_qM1QEpb7Ee-KmZ2n8KXWUA" sourceItem="_WmxCwJc1Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Wmy38Zc1Ee-KmZ2n8KXWUA" targetItem="_qM1QGJb7Ee-KmZ2n8KXWUA" sourceItem="_Wmy38Jc1Ee-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_c9-KgJc3Ee-KmZ2n8KXWUA" source="_qM_AwJb7Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_c9iFqZc3Ee-KmZ2n8KXWUA"/>
     <stereotypes xmi:id="_c9-KgZc3Ee-KmZ2n8KXWUA" name="Reference">
@@ -394,9 +361,6 @@
       <cardinality xmi:id="_c9-KiJc3Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZOP7AZc4Ee-KmZ2n8KXWUA" targetItem="_qMyzgJb7Ee-KmZ2n8KXWUA" sourceItem="_ZOP7AJc4Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZOcvUJc4Ee-KmZ2n8KXWUA" targetItem="_qMyzj5b7Ee-KmZ2n8KXWUA" sourceItem="_ZObhMJc4Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZOfLkZc4Ee-KmZ2n8KXWUA" targetItem="_jcktAJc0Ee-KmZ2n8KXWUA" sourceItem="_ZOfLkJc4Ee-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rwcq4Zc4Ee-KmZ2n8KXWUA" targetItem="_qM_AwJb7Ee-KmZ2n8KXWUA" sourceItem="_rwcq4Jc4Ee-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rwwM4Zc4Ee-KmZ2n8KXWUA" targetItem="_qM_AyZb7Ee-KmZ2n8KXWUA" sourceItem="_rwwM4Jc4Ee-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rw3hoJc4Ee-KmZ2n8KXWUA" targetItem="_qM_Az5b7Ee-KmZ2n8KXWUA" sourceItem="_rw2TgJc4Ee-KmZ2n8KXWUA"/>
@@ -406,10 +370,21 @@
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rxEV8Jc4Ee-KmZ2n8KXWUA" targetItem="_qM_A9Zb7Ee-KmZ2n8KXWUA" sourceItem="_rxDu4Jc4Ee-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rxLqsJc4Ee-KmZ2n8KXWUA" targetItem="_4f9f4pc3Ee-KmZ2n8KXWUA" sourceItem="_rxKckJc4Ee-KmZ2n8KXWUA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rxcwcJc4Ee-KmZ2n8KXWUA" targetItem="_qExMMJc4Ee-KmZ2n8KXWUA" sourceItem="_rxcJYJc4Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_zd8iEZc4Ee-KmZ2n8KXWUA" targetItem="_qM79cJb7Ee-KmZ2n8KXWUA" sourceItem="_zd8iEJc4Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_zd--UZc4Ee-KmZ2n8KXWUA" targetItem="_qM79gJb7Ee-KmZ2n8KXWUA" sourceItem="_zd--UJc4Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_zeBakJc4Ee-KmZ2n8KXWUA" targetItem="_qM79iZb7Ee-KmZ2n8KXWUA" sourceItem="_zeAzgJc4Ee-KmZ2n8KXWUA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_zeCosZc4Ee-KmZ2n8KXWUA" targetItem="_ntqkMJczEe-KmZ2n8KXWUA" sourceItem="_zeCosJc4Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nTda0Zc7Ee-KmZ2n8KXWUA" targetItem="_qM1P0pb7Ee-KmZ2n8KXWUA" sourceItem="_nTda0Jc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nTt5gJc7Ee-KmZ2n8KXWUA" targetItem="_qM1P7pb7Ee-KmZ2n8KXWUA" sourceItem="_nTtScJc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nT1OQJc7Ee-KmZ2n8KXWUA" targetItem="_qM1P-pb7Ee-KmZ2n8KXWUA" sourceItem="_nT0AIJc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nT3qgZc7Ee-KmZ2n8KXWUA" targetItem="_qM1QDJb7Ee-KmZ2n8KXWUA" sourceItem="_nT3qgJc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nT5fsZc7Ee-KmZ2n8KXWUA" targetItem="_IQ3Fcpc7Ee-KmZ2n8KXWUA" sourceItem="_nT5fsJc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nUA0cJc7Ee-KmZ2n8KXWUA" targetItem="_lfwBgJc7Ee-KmZ2n8KXWUA" sourceItem="_nUANYJc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_8fQDIZc7Ee-KmZ2n8KXWUA" targetItem="_qM79cJb7Ee-KmZ2n8KXWUA" sourceItem="_8fQDIJc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_8fVisZc7Ee-KmZ2n8KXWUA" targetItem="_qM79gJb7Ee-KmZ2n8KXWUA" sourceItem="_8fVisJc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_8fXX4Jc7Ee-KmZ2n8KXWUA" targetItem="_qM79iZb7Ee-KmZ2n8KXWUA" sourceItem="_8fWw0Jc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_8fZNEZc7Ee-KmZ2n8KXWUA" targetItem="_ntqkMJczEe-KmZ2n8KXWUA" sourceItem="_8fZNEJc7Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PYZ6cJc8Ee-KmZ2n8KXWUA" targetItem="_qM46Mpb7Ee-KmZ2n8KXWUA" sourceItem="_PYZTYJc8Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PYgBEZc8Ee-KmZ2n8KXWUA" targetItem="_qM46Opb7Ee-KmZ2n8KXWUA" sourceItem="_PYgBEJc8Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_XT6_gZc8Ee-KmZ2n8KXWUA" targetItem="_qMyzgJb7Ee-KmZ2n8KXWUA" sourceItem="_XT6_gJc8Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_XUF-oJc8Ee-KmZ2n8KXWUA" targetItem="_qMyzj5b7Ee-KmZ2n8KXWUA" sourceItem="_XUEwgJc8Ee-KmZ2n8KXWUA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_XUHz0Zc8Ee-KmZ2n8KXWUA" targetItem="_jcktAJc0Ee-KmZ2n8KXWUA" sourceItem="_XUHz0Jc8Ee-KmZ2n8KXWUA"/>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qMzakJb7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_qMzakZb7Ee-KmZ2n8KXWUA" text="interface for any moving object, includes layout for necessary&#xA;functions that characters have&#xA;&#xA;@author williamcheng" item="_qMzakpb7Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_osrrspb7Ee-KmZ2n8KXWUA"/>
   </nodes>
@@ -593,7 +568,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_EVtAoJb9Ee-KmZ2n8KXWUA" name="BufferedImage" associationsIn="_qM1PyZb7Ee-KmZ2n8KXWUA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_EVtAoJb9Ee-KmZ2n8KXWUA" name="BufferedImage">
     <modelElement href="gameProject.uml#_osfeZ5b7Ee-KmZ2n8KXWUA"/>
     <visualProperties xmi:id="_EVtAoZb9Ee-KmZ2n8KXWUA" position="206.0,459.0" size="-1.0,-1.0"/>
     <stereotypes xmi:id="_EVtAopb9Ee-KmZ2n8KXWUA" name="Reference">
@@ -839,7 +814,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qM46Mpb7Ee-KmZ2n8KXWUA" comments="_ntpWFJczEe-KmZ2n8KXWUA" targetConnectionVisual="_MykF8ZcCEe-KmZ2n8KXWUA _ntpWFZczEe-KmZ2n8KXWUA" name="KeyboardInputs" associationsIn="_qM4TG5b7Ee-KmZ2n8KXWUA" associationsOut="_qM4THJb7Ee-KmZ2n8KXWUA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qM46Mpb7Ee-KmZ2n8KXWUA" comments="_PYZTYJc8Ee-KmZ2n8KXWUA" targetConnectionVisual="_MykF8ZcCEe-KmZ2n8KXWUA _PYZ6cJc8Ee-KmZ2n8KXWUA" name="KeyboardInputs" associationsIn="_qM4TG5b7Ee-KmZ2n8KXWUA" associationsOut="_qM4THJb7Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_osDZgJb7Ee-KmZ2n8KXWUA"/>
     <visualProperties xmi:id="_qM46M5b7Ee-KmZ2n8KXWUA" position="-616.0,394.0" size="219.0,220.0"/>
     <visibility xmi:id="_qM46NJb7Ee-KmZ2n8KXWUA" label="+"/>
@@ -854,7 +829,7 @@
         <modelElement href="gameProject.uml#_osGc0Jb7Ee-KmZ2n8KXWUA"/>
       </type>
     </attributes>
-    <operations xmi:id="_qM46Opb7Ee-KmZ2n8KXWUA" comments="_ntp9IJczEe-KmZ2n8KXWUA" targetConnectionVisual="_MyqMkZcCEe-KmZ2n8KXWUA _ntp9IZczEe-KmZ2n8KXWUA" name="KeyboardInputs">
+    <operations xmi:id="_qM46Opb7Ee-KmZ2n8KXWUA" comments="_PYgBEJc8Ee-KmZ2n8KXWUA" targetConnectionVisual="_MyqMkZcCEe-KmZ2n8KXWUA _PYgBEZc8Ee-KmZ2n8KXWUA" name="KeyboardInputs">
       <modelElement href="gameProject.uml#_oscbEpb7Ee-KmZ2n8KXWUA"/>
       <keywords xmi:id="_qM46O5b7Ee-KmZ2n8KXWUA" keyword="create"/>
       <visibility xmi:id="_qM46PJb7Ee-KmZ2n8KXWUA" label="+"/>
@@ -1013,11 +988,11 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qMyzgJb7Ee-KmZ2n8KXWUA" comments="_ZOP7AJc4Ee-KmZ2n8KXWUA" targetConnectionVisual="_ZOP7AZc4Ee-KmZ2n8KXWUA" name="Player" associationsIn="_zKM98Jb8Ee-KmZ2n8KXWUA" generalizations="_qM0os5b7Ee-KmZ2n8KXWUA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qMyzgJb7Ee-KmZ2n8KXWUA" comments="_XT6_gJc8Ee-KmZ2n8KXWUA" targetConnectionVisual="_XT6_gZc8Ee-KmZ2n8KXWUA" name="Player" associationsIn="_zKM98Jb8Ee-KmZ2n8KXWUA" generalizations="_qM0os5b7Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_osKHMJb7Ee-KmZ2n8KXWUA"/>
     <visualProperties xmi:id="_qMyzgZb7Ee-KmZ2n8KXWUA" position="-322.0,553.0" size="241.0,188.0"/>
     <visibility xmi:id="_qMyzgpb7Ee-KmZ2n8KXWUA" label="+"/>
-    <attributes xmi:id="_ZJPc0JcEEe-KmZ2n8KXWUA" defaultValue="5" name="SPEED">
+    <attributes xmi:id="_ZJPc0JcEEe-KmZ2n8KXWUA" defaultValue="10" name="SPEED">
       <modelElement href="gameProject.uml#_ZJFEwJcEEe-KmZ2n8KXWUA"/>
       <stereotypes xmi:id="_ZJPc0ZcEEe-KmZ2n8KXWUA" name="LegacyStyledElement">
         <modelElement href="gameProject.uml#_ZJFEwpcEEe-KmZ2n8KXWUA"/>
@@ -1028,7 +1003,7 @@
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <operations xmi:id="_qMyzj5b7Ee-KmZ2n8KXWUA" comments="_ZObhMJc4Ee-KmZ2n8KXWUA" targetConnectionVisual="_ZOcvUJc4Ee-KmZ2n8KXWUA" name="Player">
+    <operations xmi:id="_qMyzj5b7Ee-KmZ2n8KXWUA" comments="_XUEwgJc8Ee-KmZ2n8KXWUA" targetConnectionVisual="_XUF-oJc8Ee-KmZ2n8KXWUA" name="Player">
       <modelElement href="gameProject.uml#_osKHN5b7Ee-KmZ2n8KXWUA"/>
       <keywords xmi:id="_qMyzkJb7Ee-KmZ2n8KXWUA" keyword="create"/>
       <visibility xmi:id="_qMyzkZb7Ee-KmZ2n8KXWUA" label="+"/>
@@ -1090,13 +1065,13 @@
       <visibility xmi:id="_ICbQY5cFEe-KmZ2n8KXWUA" label="+"/>
       <cardinality xmi:id="_ICbQZJcFEe-KmZ2n8KXWUA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_jcktAJc0Ee-KmZ2n8KXWUA" comments="_ZOfLkJc4Ee-KmZ2n8KXWUA" targetConnectionVisual="_ZOfLkZc4Ee-KmZ2n8KXWUA" name="loadAnimations">
+    <operations xmi:id="_jcktAJc0Ee-KmZ2n8KXWUA" comments="_XUHz0Jc8Ee-KmZ2n8KXWUA" targetConnectionVisual="_XUHz0Zc8Ee-KmZ2n8KXWUA" name="loadAnimations">
       <modelElement href="gameProject.uml#_jcUOUJc0Ee-KmZ2n8KXWUA"/>
       <visibility xmi:id="_jcktAZc0Ee-KmZ2n8KXWUA" label="-"/>
       <cardinality xmi:id="_jcktApc0Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qM1P0pb7Ee-KmZ2n8KXWUA" comments="_WmWMAJc1Ee-KmZ2n8KXWUA" targetConnectionVisual="_WmWMAZc1Ee-KmZ2n8KXWUA" name="Sprite" associationsOut="_qM1PwJb7Ee-KmZ2n8KXWUA _qM1PyZb7Ee-KmZ2n8KXWUA" generalizations="_qM0osJb7Ee-KmZ2n8KXWUA" subclassedBy="_qM0os5b7Ee-KmZ2n8KXWUA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qM1P0pb7Ee-KmZ2n8KXWUA" comments="_nTda0Jc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_nTda0Zc7Ee-KmZ2n8KXWUA" name="Sprite" associationsOut="_qM1PwJb7Ee-KmZ2n8KXWUA" generalizations="_qM0osJb7Ee-KmZ2n8KXWUA" subclassedBy="_qM0os5b7Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_osKHP5b7Ee-KmZ2n8KXWUA"/>
     <visualProperties xmi:id="_qM1P05b7Ee-KmZ2n8KXWUA" position="-54.0,552.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qM1P1Jb7Ee-KmZ2n8KXWUA" label="+"/>
@@ -1109,17 +1084,6 @@
       <cardinality xmi:id="_qM1P2Jb7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
       <type xmi:id="_qM1P2Zb7Ee-KmZ2n8KXWUA" name="Images">
         <modelElement href="gameProject.uml#_osHD4Zb7Ee-KmZ2n8KXWUA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_qM1P2pb7Ee-KmZ2n8KXWUA" name="look">
-      <modelElement href="gameProject.uml#_osooUpb7Ee-KmZ2n8KXWUA"/>
-      <stereotypes xmi:id="_ntrLQZczEe-KmZ2n8KXWUA" name="LegacyStyledElement"/>
-      <stereotypes xmi:id="_ntrLQpczEe-KmZ2n8KXWUA" name="LegacyStyledElement"/>
-      <stereotypes xmi:id="_nttngZczEe-KmZ2n8KXWUA" name="LegacyStyledElement"/>
-      <visibility xmi:id="_qM1P3Jb7Ee-KmZ2n8KXWUA" label="-"/>
-      <cardinality xmi:id="_qM1P3Zb7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
-      <type xmi:id="_qM1P3pb7Ee-KmZ2n8KXWUA" name="BufferedImage">
-        <modelElement href="gameProject.uml#_osfeZ5b7Ee-KmZ2n8KXWUA"/>
       </type>
     </attributes>
     <attributes xmi:id="_qM1P35b7Ee-KmZ2n8KXWUA" name="xPos">
@@ -1155,7 +1119,21 @@
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
-    <operations xmi:id="_qM1P7pb7Ee-KmZ2n8KXWUA" comments="_WmkOcJc1Ee-KmZ2n8KXWUA" targetConnectionVisual="_Wmk1gJc1Ee-KmZ2n8KXWUA" name="Sprite">
+    <attributes xmi:id="_GNxMUJc7Ee-KmZ2n8KXWUA" name="animation">
+      <modelElement href="gameProject.uml#_GNffgJc7Ee-KmZ2n8KXWUA"/>
+      <stereotypes xmi:id="_GNxMUZc7Ee-KmZ2n8KXWUA" name="LegacyStyledElement">
+        <modelElement href="gameProject.uml#_GNffgZc7Ee-KmZ2n8KXWUA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_caz2QJc7Ee-KmZ2n8KXWUA" name="Array">
+        <modelElement href="gameProject.uml#_cZvfQZc7Ee-KmZ2n8KXWUA"/>
+      </stereotypes>
+      <visibility xmi:id="_GNxMUpc7Ee-KmZ2n8KXWUA" label="-"/>
+      <cardinality xmi:id="_GNxMU5c7Ee-KmZ2n8KXWUA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_cad4AJc7Ee-KmZ2n8KXWUA" name="BufferedImage">
+        <modelElement href="gameProject.uml#_osfeZ5b7Ee-KmZ2n8KXWUA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_qM1P7pb7Ee-KmZ2n8KXWUA" comments="_nTtScJc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_nTt5gJc7Ee-KmZ2n8KXWUA" name="Sprite">
       <modelElement href="gameProject.uml#_osKuQJb7Ee-KmZ2n8KXWUA"/>
       <keywords xmi:id="_qM1P75b7Ee-KmZ2n8KXWUA" keyword="create"/>
       <visibility xmi:id="_qM1P8Jb7Ee-KmZ2n8KXWUA" label="+"/>
@@ -1181,7 +1159,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_qM1P-pb7Ee-KmZ2n8KXWUA" comments="_Wmq8IJc1Ee-KmZ2n8KXWUA" targetConnectionVisual="_WmrjMJc1Ee-KmZ2n8KXWUA" name="Sprite">
+    <operations xmi:id="_qM1P-pb7Ee-KmZ2n8KXWUA" comments="_nT0AIJc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_nT1OQJc7Ee-KmZ2n8KXWUA" name="Sprite">
       <modelElement href="gameProject.uml#_osKuRpb7Ee-KmZ2n8KXWUA"/>
       <keywords xmi:id="_qM1P-5b7Ee-KmZ2n8KXWUA" keyword="create"/>
       <visibility xmi:id="_qM1P_Jb7Ee-KmZ2n8KXWUA" label="+"/>
@@ -1221,7 +1199,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_qM1QDJb7Ee-KmZ2n8KXWUA" comments="_Wmt_cJc1Ee-KmZ2n8KXWUA" targetConnectionVisual="_Wmt_cZc1Ee-KmZ2n8KXWUA" name="initializeSprites">
+    <operations xmi:id="_qM1QDJb7Ee-KmZ2n8KXWUA" comments="_nT3qgJc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_nT3qgZc7Ee-KmZ2n8KXWUA" name="initializeSprites">
       <modelElement href="gameProject.uml#_osKuTpb7Ee-KmZ2n8KXWUA"/>
       <visibility xmi:id="_qM1QDZb7Ee-KmZ2n8KXWUA" label="-"/>
       <cardinality xmi:id="_qM1QDpb7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
@@ -1232,29 +1210,6 @@
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </type>
       </parameters>
-    </operations>
-    <operations xmi:id="_qM1QEpb7Ee-KmZ2n8KXWUA" comments="_WmxCwJc1Ee-KmZ2n8KXWUA" targetConnectionVisual="_Wmxp0Jc1Ee-KmZ2n8KXWUA" name="skin">
-      <modelElement href="gameProject.uml#_osKuUJb7Ee-KmZ2n8KXWUA"/>
-      <visibility xmi:id="_qM1QE5b7Ee-KmZ2n8KXWUA" label="+"/>
-      <cardinality xmi:id="_qM1QFJb7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
-      <parameters xmi:id="_qM1QFZb7Ee-KmZ2n8KXWUA" name="name">
-        <modelElement href="gameProject.uml#_osKuUZb7Ee-KmZ2n8KXWUA"/>
-        <cardinality xmi:id="_qM1QFpb7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
-        <type xmi:id="_qM1QF5b7Ee-KmZ2n8KXWUA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_qM1QGJb7Ee-KmZ2n8KXWUA" comments="_Wmy38Jc1Ee-KmZ2n8KXWUA" targetConnectionVisual="_Wmy38Zc1Ee-KmZ2n8KXWUA" name="getSkin">
-      <modelElement href="gameProject.uml#_osKuUpb7Ee-KmZ2n8KXWUA"/>
-      <visibility xmi:id="_qM1QGZb7Ee-KmZ2n8KXWUA" label="+"/>
-      <cardinality xmi:id="_qM1QGpb7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_qM1QG5b7Ee-KmZ2n8KXWUA">
-        <modelElement href="gameProject.uml#_osllApb7Ee-KmZ2n8KXWUA"/>
-        <type xmi:id="_qM1QHJb7Ee-KmZ2n8KXWUA" name="BufferedImage">
-          <modelElement href="gameProject.uml#_osfeZ5b7Ee-KmZ2n8KXWUA"/>
-        </type>
-      </outParameters>
     </operations>
     <operations xmi:id="_qM1QHZb7Ee-KmZ2n8KXWUA" name="moveRight">
       <modelElement href="gameProject.uml#_osKuU5b7Ee-KmZ2n8KXWUA"/>
@@ -1320,6 +1275,32 @@
         <modelElement href="gameProject.uml#_osLVYZb7Ee-KmZ2n8KXWUA"/>
         <type xmi:id="_qM1QOZb7Ee-KmZ2n8KXWUA" name="int">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_IQ3Fcpc7Ee-KmZ2n8KXWUA" comments="_nT5fsJc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_nT5fsZc7Ee-KmZ2n8KXWUA" name="setAni">
+      <modelElement href="gameProject.uml#_IQqRIJc7Ee-KmZ2n8KXWUA"/>
+      <visibility xmi:id="_IQ3Fc5c7Ee-KmZ2n8KXWUA" label="+"/>
+      <cardinality xmi:id="_IQ3FdJc7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_IQ3FdZc7Ee-KmZ2n8KXWUA" name="name">
+        <modelElement href="gameProject.uml#_IQqRIZc7Ee-KmZ2n8KXWUA"/>
+        <cardinality xmi:id="_IQ3Fdpc7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
+        <type xmi:id="_IQ3Fd5c7Ee-KmZ2n8KXWUA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_lfwBgJc7Ee-KmZ2n8KXWUA" comments="_nUANYJc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_nUA0cJc7Ee-KmZ2n8KXWUA" name="animation">
+      <modelElement href="gameProject.uml#_lfimIJc7Ee-KmZ2n8KXWUA"/>
+      <stereotypes xmi:id="_lfwBgZc7Ee-KmZ2n8KXWUA" name="Array">
+        <modelElement href="gameProject.uml#_lfimI5c7Ee-KmZ2n8KXWUA"/>
+      </stereotypes>
+      <visibility xmi:id="_lfwBgpc7Ee-KmZ2n8KXWUA" label="+"/>
+      <cardinality xmi:id="_lfwBg5c7Ee-KmZ2n8KXWUA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_lfwBhJc7Ee-KmZ2n8KXWUA">
+        <modelElement href="gameProject.uml#_lfimIZc7Ee-KmZ2n8KXWUA"/>
+        <type xmi:id="_lfwBhZc7Ee-KmZ2n8KXWUA" name="BufferedImage">
+          <modelElement href="gameProject.uml#_osfeZ5b7Ee-KmZ2n8KXWUA"/>
         </type>
       </outParameters>
     </operations>
@@ -1551,7 +1532,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qM79cJb7Ee-KmZ2n8KXWUA" comments="_zd8iEJc4Ee-KmZ2n8KXWUA" targetConnectionVisual="_Evj40ZcCEe-KmZ2n8KXWUA _zd8iEZc4Ee-KmZ2n8KXWUA" name="GamePanel" associationsIn="_qM4THJb7Ee-KmZ2n8KXWUA _qM5hMZb7Ee-KmZ2n8KXWUA _qM3E-5b7Ee-KmZ2n8KXWUA" associationsOut="_qM5hMJb7Ee-KmZ2n8KXWUA _qM4TG5b7Ee-KmZ2n8KXWUA _ntp9IpczEe-KmZ2n8KXWUA" generalizations="_eeo4YJb9Ee-KmZ2n8KXWUA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qM79cJb7Ee-KmZ2n8KXWUA" comments="_8fQDIJc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_Evj40ZcCEe-KmZ2n8KXWUA _8fQDIZc7Ee-KmZ2n8KXWUA" name="GamePanel" associationsIn="_qM4THJb7Ee-KmZ2n8KXWUA _qM5hMZb7Ee-KmZ2n8KXWUA _qM3E-5b7Ee-KmZ2n8KXWUA" associationsOut="_qM5hMJb7Ee-KmZ2n8KXWUA _qM4TG5b7Ee-KmZ2n8KXWUA _ntp9IpczEe-KmZ2n8KXWUA" generalizations="_eeo4YJb9Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_osGc0Jb7Ee-KmZ2n8KXWUA"/>
     <visualProperties xmi:id="_qM79cZb7Ee-KmZ2n8KXWUA" position="-697.0,162.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qM79cpb7Ee-KmZ2n8KXWUA" label="+"/>
@@ -1585,7 +1566,40 @@
         <modelElement href="gameProject.uml#_osJgJJb7Ee-KmZ2n8KXWUA"/>
       </type>
     </attributes>
-    <operations xmi:id="_qM79gJb7Ee-KmZ2n8KXWUA" comments="_zd--UJc4Ee-KmZ2n8KXWUA" targetConnectionVisual="_EvmVEZcCEe-KmZ2n8KXWUA _zd--UZc4Ee-KmZ2n8KXWUA" name="GamePanel">
+    <attributes xmi:id="_QNeooJc5Ee-KmZ2n8KXWUA" defaultValue="0" name="aniTick">
+      <modelElement href="gameProject.uml#_QNaXMJc5Ee-KmZ2n8KXWUA"/>
+      <stereotypes xmi:id="_QNeoopc5Ee-KmZ2n8KXWUA" name="LegacyStyledElement">
+        <modelElement href="gameProject.uml#_QNaXMpc5Ee-KmZ2n8KXWUA"/>
+      </stereotypes>
+      <visibility xmi:id="_QNeoo5c5Ee-KmZ2n8KXWUA" label="-"/>
+      <cardinality xmi:id="_QNeopJc5Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
+      <type xmi:id="_QNeopZc5Ee-KmZ2n8KXWUA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_QNeoppc5Ee-KmZ2n8KXWUA" defaultValue="0" name="aniIndex">
+      <modelElement href="gameProject.uml#_QNa-QZc5Ee-KmZ2n8KXWUA"/>
+      <stereotypes xmi:id="_QNeoqJc5Ee-KmZ2n8KXWUA" name="LegacyStyledElement">
+        <modelElement href="gameProject.uml#_QNa-Q5c5Ee-KmZ2n8KXWUA"/>
+      </stereotypes>
+      <visibility xmi:id="_QNeoqZc5Ee-KmZ2n8KXWUA" label="-"/>
+      <cardinality xmi:id="_QNeoqpc5Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
+      <type xmi:id="_QNeoq5c5Ee-KmZ2n8KXWUA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AG2G0Jc6Ee-KmZ2n8KXWUA" defaultValue="20" name="ANI_SPEED">
+      <modelElement href="gameProject.uml#_AGrHsJc6Ee-KmZ2n8KXWUA"/>
+      <stereotypes xmi:id="_AG2G0Zc6Ee-KmZ2n8KXWUA" name="LegacyStyledElement">
+        <modelElement href="gameProject.uml#_AGruwJc6Ee-KmZ2n8KXWUA"/>
+      </stereotypes>
+      <visibility xmi:id="_AG2G0pc6Ee-KmZ2n8KXWUA" label="-"/>
+      <cardinality xmi:id="_AG2G05c6Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
+      <type xmi:id="_AG2G1Jc6Ee-KmZ2n8KXWUA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_qM79gJb7Ee-KmZ2n8KXWUA" comments="_8fVisJc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_EvmVEZcCEe-KmZ2n8KXWUA _8fVisZc7Ee-KmZ2n8KXWUA" name="GamePanel">
       <modelElement href="gameProject.uml#_osGc0Zb7Ee-KmZ2n8KXWUA"/>
       <keywords xmi:id="_qM79gZb7Ee-KmZ2n8KXWUA" keyword="create"/>
       <visibility xmi:id="_qM79gpb7Ee-KmZ2n8KXWUA" label="+"/>
@@ -1597,7 +1611,7 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_qM79iZb7Ee-KmZ2n8KXWUA" comments="_zeAzgJc4Ee-KmZ2n8KXWUA" targetConnectionVisual="_EvpYYZcCEe-KmZ2n8KXWUA _zeBakJc4Ee-KmZ2n8KXWUA" name="paintComponent">
+    <operations xmi:id="_qM79iZb7Ee-KmZ2n8KXWUA" comments="_8fWw0Jc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_EvpYYZcCEe-KmZ2n8KXWUA _8fXX4Jc7Ee-KmZ2n8KXWUA" name="paintComponent">
       <modelElement href="gameProject.uml#_osk98Jb7Ee-KmZ2n8KXWUA"/>
       <visibility xmi:id="_qM79ipb7Ee-KmZ2n8KXWUA" label="+"/>
       <cardinality xmi:id="_qM79i5b7Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
@@ -1609,10 +1623,15 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_ntqkMJczEe-KmZ2n8KXWUA" comments="_zeCosJc4Ee-KmZ2n8KXWUA" targetConnectionVisual="_zeCosZc4Ee-KmZ2n8KXWUA" name="setPanelSize">
+    <operations xmi:id="_ntqkMJczEe-KmZ2n8KXWUA" comments="_8fZNEJc7Ee-KmZ2n8KXWUA" targetConnectionVisual="_8fZNEZc7Ee-KmZ2n8KXWUA" name="setPanelSize">
       <modelElement href="gameProject.uml#_nAzeMJczEe-KmZ2n8KXWUA"/>
       <visibility xmi:id="_ntqkP5czEe-KmZ2n8KXWUA" label="-"/>
       <cardinality xmi:id="_ntqkPpczEe-KmZ2n8KXWUA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_j77JMJc5Ee-KmZ2n8KXWUA" name="updateAnimationTick">
+      <modelElement href="gameProject.uml#_j70bgJc5Ee-KmZ2n8KXWUA"/>
+      <visibility xmi:id="_j77JMZc5Ee-KmZ2n8KXWUA" label="-"/>
+      <cardinality xmi:id="_j77JMpc5Ee-KmZ2n8KXWUA" label="1" max="1" min="1"/>
     </operations>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ntovAJczEe-KmZ2n8KXWUA" sourceConnectionVisual="_ntovAZczEe-KmZ2n8KXWUA" text="GameWindow class provides a frame using JFrame to house a &#xA;GamePanel object. Also initializes settings such as screen&#xA;resolution, and additional window settings.&#xA;&#xA;@author williamcheng" item="_qM9Lkpb7Ee-KmZ2n8KXWUA">
@@ -1626,39 +1645,6 @@
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ntpWEpczEe-KmZ2n8KXWUA" sourceConnectionVisual="_ntpWE5czEe-KmZ2n8KXWUA" text="starts the game loop a new thread gameThread" item="_qM3FKpb7Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_nA0sV5czEe-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ntpWFJczEe-KmZ2n8KXWUA" sourceConnectionVisual="_ntpWFZczEe-KmZ2n8KXWUA" text="KeyListener object that listens for different keyboard inputs,&#xA;passed to JPanel objects as KeyListeners.&#xA;&#xA;@author williamcheng" item="_qM46Mpb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_nA0sU5czEe-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ntp9IJczEe-KmZ2n8KXWUA" sourceConnectionVisual="_ntp9IZczEe-KmZ2n8KXWUA" text="constructor for Keyboard Inputs, takes in the gamePanel to access &#xA;&#x9; * the main gamePanel for the game.&#xA;&#x9; * &#xA;&#x9; * @param gamePanel" item="_qM46Opb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_nA0sVJczEe-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_WmWMAJc1Ee-KmZ2n8KXWUA" sourceConnectionVisual="_WmWMAZc1Ee-KmZ2n8KXWUA" text="Character object includes basic operations for all characters in the &#xA;game.&#xA;&#xA;@author williamcheng" item="_qM1P0pb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_WmJXsJc1Ee-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_WmkOcJc1Ee-KmZ2n8KXWUA" sourceConnectionVisual="_Wmk1gJc1Ee-KmZ2n8KXWUA" text="constructor for a character, default position 0,0&#xA;&#x9; * &#xA;&#x9; * @param String name - name of the character&#xA;&#x9; * @param BufferedImage spriteSheet - sprite's images 64x40" item="_qM1P7pb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_WmJXsZc1Ee-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Wmq8IJc1Ee-KmZ2n8KXWUA" sourceConnectionVisual="_WmrjMJc1Ee-KmZ2n8KXWUA" text="constructor with non-default position&#xA;&#x9; * @param name - name of sprite&#xA;&#x9; * @param xPos - x coordinate of sprite&#xA;&#x9; * @param yPos - y coordinate of sprite&#xA;&#x9; * @param BufferedImage spriteSheet - images for sprite" item="_qM1P-pb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_WmJXspc1Ee-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Wmt_cJc1Ee-KmZ2n8KXWUA" sourceConnectionVisual="_Wmt_cZc1Ee-KmZ2n8KXWUA" text="helper constructor method, initializes and loads all sprite&#xA;&#x9; * images into Images collection&#xA;&#x9; * &#xA;&#x9; * @param String spriteSheet - address to spriteSheet" item="_qM1QDJb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_WmJXs5c1Ee-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_WmxCwJc1Ee-KmZ2n8KXWUA" sourceConnectionVisual="_Wmxp0Jc1Ee-KmZ2n8KXWUA" text="Sets the appearance of the sprite to a certain look&#xA;&#x9; * &#xA;&#x9; * @param String name - name of the look" item="_qM1QEpb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_WmJXtJc1Ee-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Wmy38Jc1Ee-KmZ2n8KXWUA" sourceConnectionVisual="_Wmy38Zc1Ee-KmZ2n8KXWUA" text="returns the current appearance of the sprite&#xA;&#x9; * &#xA;&#x9; * @return - BufferedImage object of the current appearance" item="_qM1QGJb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_WmJXtZc1Ee-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZOP7AJc4Ee-KmZ2n8KXWUA" sourceConnectionVisual="_ZOP7AZc4Ee-KmZ2n8KXWUA" text="Object for the main character of the game&#xA;&#xA;@author williamcheng" item="_qMyzgJb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_ZOKbcJc4Ee-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZObhMJc4Ee-KmZ2n8KXWUA" sourceConnectionVisual="_ZOcvUJc4Ee-KmZ2n8KXWUA" text="Constructor for the player, sets up sprite object and loads all states from &#xA;&#x9; * sprite sheet into the images object&#xA;&#x9; * @param name - name of the Sprite&#xA;&#x9; * @param xPos - x position of the sprite&#xA;&#x9; * @param yPos - y position of the sprite&#xA;&#x9; * @param spriteSheet - sprite images" item="_qMyzj5b7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_ZOKbcZc4Ee-KmZ2n8KXWUA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZOfLkJc4Ee-KmZ2n8KXWUA" sourceConnectionVisual="_ZOfLkZc4Ee-KmZ2n8KXWUA" text="Construct animation arrays for the sprite" item="_jcktAJc0Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_ZOKbcpc4Ee-KmZ2n8KXWUA"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rwcq4Jc4Ee-KmZ2n8KXWUA" sourceConnectionVisual="_rwcq4Zc4Ee-KmZ2n8KXWUA" text="Object to contain and sort a collection of images and animations&#xA;&#xA;@author williamcheng" item="_qM_AwJb7Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_rwK-EJc4Ee-KmZ2n8KXWUA"/>
@@ -1687,16 +1673,49 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rxcJYJc4Ee-KmZ2n8KXWUA" sourceConnectionVisual="_rxcwcJc4Ee-KmZ2n8KXWUA" text="gets the animation array from the collection&#xA;&#x9; * @param name&#xA;&#x9; * @return" item="_qExMMJc4Ee-KmZ2n8KXWUA">
     <modelElement href="gameProject.uml#_rwK-GJc4Ee-KmZ2n8KXWUA"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_zd8iEJc4Ee-KmZ2n8KXWUA" sourceConnectionVisual="_zd8iEZc4Ee-KmZ2n8KXWUA" text="GamePanel is an extension of a JPanel object that allows &#xA;for objects to be painted on the screen. For GamePanel to&#xA;show, it has to be added to a GameWindow first.&#xA;&#xA;@author williamcheng" item="_qM79cJb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_zd3pkJc4Ee-KmZ2n8KXWUA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nTda0Jc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_nTda0Zc7Ee-KmZ2n8KXWUA" text="Character object includes basic operations for all characters in the &#xA;game.&#xA;&#xA;@author williamcheng" item="_qM1P0pb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_nTOKQJc7Ee-KmZ2n8KXWUA"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_zd--UJc4Ee-KmZ2n8KXWUA" sourceConnectionVisual="_zd--UZc4Ee-KmZ2n8KXWUA" text="Default constructor for GamePanel. Initializes input listeners.&#xA;&#x9; * Graphics are initialized separately in paintComponent,&#xA;&#x9; * JPanel's own constructor." item="_qM79gJb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_zd3pkZc4Ee-KmZ2n8KXWUA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nTtScJc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_nTt5gJc7Ee-KmZ2n8KXWUA" text="constructor for a character, default position 0,0&#xA;&#x9; * &#xA;&#x9; * @param String name - name of the character&#xA;&#x9; * @param BufferedImage spriteSheet - sprite's images 64x40" item="_qM1P7pb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_nTOKQZc7Ee-KmZ2n8KXWUA"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_zeAzgJc4Ee-KmZ2n8KXWUA" sourceConnectionVisual="_zeBakJc4Ee-KmZ2n8KXWUA" text="Called on initialization of JPanel, used to draw  items&#xA;&#x9; * on the screen. Graphics component allows us to draw to&#xA;&#x9; * the panel. Method used to update the game panel!! &#xA;&#x9; * &#xA;&#x9; * @param Graphics object" item="_qM79iZb7Ee-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_zd3pk5c4Ee-KmZ2n8KXWUA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nT0AIJc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_nT1OQJc7Ee-KmZ2n8KXWUA" text="constructor with non-default position&#xA;&#x9; * @param name - name of sprite&#xA;&#x9; * @param xPos - x coordinate of sprite&#xA;&#x9; * @param yPos - y coordinate of sprite&#xA;&#x9; * @param BufferedImage spriteSheet - images for sprite" item="_qM1P-pb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_nTOKQpc7Ee-KmZ2n8KXWUA"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_zeCosJc4Ee-KmZ2n8KXWUA" sourceConnectionVisual="_zeCosZc4Ee-KmZ2n8KXWUA" text="Sets the size of the JPanel object, not setting window size in &#xA;&#x9; * JFrame since that will include the top bar height if initialized&#xA;&#x9; * in JFrame." item="_ntqkMJczEe-KmZ2n8KXWUA">
-    <modelElement href="gameProject.uml#_zd3pkpc4Ee-KmZ2n8KXWUA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nT3qgJc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_nT3qgZc7Ee-KmZ2n8KXWUA" text="helper constructor method, initializes and loads all sprite&#xA;&#x9; * images into Images collection&#xA;&#x9; * &#xA;&#x9; * @param String spriteSheet - address to spriteSheet" item="_qM1QDJb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_nTOKQ5c7Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nT5fsJc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_nT5fsZc7Ee-KmZ2n8KXWUA" text="sets the state of the character&#xA;&#x9; * @param name - name of the animation" item="_IQ3Fcpc7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_nTOKRJc7Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nUANYJc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_nUA0cJc7Ee-KmZ2n8KXWUA" text="returns the animation of the sprite&#xA;&#x9; * @return" item="_lfwBgJc7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_nTOKRZc7Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_8fQDIJc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_8fQDIZc7Ee-KmZ2n8KXWUA" text="GamePanel is an extension of a JPanel object that allows &#xA;for objects to be painted on the screen. For GamePanel to&#xA;show, it has to be added to a GameWindow first.&#xA;&#xA;@author williamcheng" item="_qM79cJb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_8fJVcJc7Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_8fVisJc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_8fVisZc7Ee-KmZ2n8KXWUA" text="Default constructor for GamePanel. Initializes input listeners.&#xA;&#x9; * Graphics are initialized separately in paintComponent,&#xA;&#x9; * JPanel's own constructor." item="_qM79gJb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_8fJVcZc7Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_8fWw0Jc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_8fXX4Jc7Ee-KmZ2n8KXWUA" text="Called on initialization of JPanel, used to draw  items&#xA;&#x9; * on the screen. Graphics component allows us to draw to&#xA;&#x9; * the panel. Method used to update the game panel!! &#xA;&#x9; * &#xA;&#x9; * @param Graphics object" item="_qM79iZb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_8fJVc5c7Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_8fZNEJc7Ee-KmZ2n8KXWUA" sourceConnectionVisual="_8fZNEZc7Ee-KmZ2n8KXWUA" text="Sets the size of the JPanel object, not setting window size in &#xA;&#x9; * JFrame since that will include the top bar height if initialized&#xA;&#x9; * in JFrame." item="_ntqkMJczEe-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_8fJVcpc7Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PYZTYJc8Ee-KmZ2n8KXWUA" sourceConnectionVisual="_PYZ6cJc8Ee-KmZ2n8KXWUA" text="KeyListener object that listens for different keyboard inputs,&#xA;passed to JPanel objects as KeyListeners.&#xA;&#xA;@author williamcheng" item="_qM46Mpb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_PYUa4pc8Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PYgBEJc8Ee-KmZ2n8KXWUA" sourceConnectionVisual="_PYgBEZc8Ee-KmZ2n8KXWUA" text="constructor for Keyboard Inputs, takes in the gamePanel to access &#xA;&#x9; * the main gamePanel for the game.&#xA;&#x9; * &#xA;&#x9; * @param gamePanel" item="_qM46Opb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_PYUa45c8Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_XT6_gJc8Ee-KmZ2n8KXWUA" sourceConnectionVisual="_XT6_gZc8Ee-KmZ2n8KXWUA" text="Object for the main character of the game&#xA;&#xA;@author williamcheng" item="_qMyzgJb7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_XT0R0Jc8Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_XUEwgJc8Ee-KmZ2n8KXWUA" sourceConnectionVisual="_XUF-oJc8Ee-KmZ2n8KXWUA" text="Constructor for the player, sets up sprite object and loads all states from &#xA;&#x9; * sprite sheet into the images object&#xA;&#x9; * @param name - name of the Sprite&#xA;&#x9; * @param xPos - x position of the sprite&#xA;&#x9; * @param yPos - y position of the sprite&#xA;&#x9; * @param spriteSheet - sprite images" item="_qMyzj5b7Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_XT0R0Zc8Ee-KmZ2n8KXWUA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_XUHz0Jc8Ee-KmZ2n8KXWUA" sourceConnectionVisual="_XUHz0Zc8Ee-KmZ2n8KXWUA" text="Construct animation arrays for the sprite" item="_jcktAJc0Ee-KmZ2n8KXWUA">
+    <modelElement href="gameProject.uml#_XT0R0pc8Ee-KmZ2n8KXWUA"/>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
