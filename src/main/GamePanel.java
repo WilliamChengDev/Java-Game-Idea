@@ -76,7 +76,11 @@ public class GamePanel extends JPanel {
 		 * object to take care of initialization.*/
 		super.paintComponent(g);
 		/* img, xpos, ypos, width, height, observer */
-		g.drawImage(models.getSprite("player").getSkin(), 
+//		g.drawImage(models.getSprite("player").getSkin(), 
+//				models.getSprite("player").xPos(), 
+//				models.getSprite("player").yPos(),
+//				128, 80, null);
+		g.drawImage(models.getSprite("player").getImages().getAnimation("idleAni")[4], 
 				models.getSprite("player").xPos(), 
 				models.getSprite("player").yPos(),
 				128, 80, null);

@@ -79,6 +79,14 @@ public class Sprite implements Model{
 	}
 	
 	/**
+	 * returns the Images object containing all sprite images
+	 * @return
+	 */
+	public Images getImages() {
+		return images;
+	}
+	
+	/**
 	 * moves the character to the right
 	 */
 	@Override

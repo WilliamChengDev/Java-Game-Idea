@@ -8,20 +8,20 @@ import java.util.HashMap;
 import javax.imageio.ImageIO;
 
 /**
- * Object to contain and sort a collection of images
+ * Object to contain and sort a collection of images and animations
  * 
  * @author williamcheng
  */
 public class Images {
 	private HashMap<String, BufferedImage> imageCollection;
+	private HashMap<String, BufferedImage[]> animationCollection;
 	
 	/**
 	 * Constructor for Images, load all images here
 	 */
 	public Images(){
 		imageCollection = new HashMap<String, BufferedImage>();
-//		this.addSpriteSheet("/player_sprites.png", 
-//							64, 40, 9, 6); //64x40 based sheet
+		animationCollection = new HashMap<>();
 	}
 	
 	/**
@@ -106,4 +106,28 @@ public class Images {
 		} 
 	}
 	
+	/**
+	 * store sequenced images into an array to represent an animation, 
+	 * stores arrays into an "animationCollection" dictionary.
+	 * @param sheetName - name of the spriteSheet
+	 * @param aniName - name of the animation
+	 * @param row - row the animation is located on
+	 * @param count - amount of frames of the animation
+	 */
+	public void createAnimation(String sheetName, String aniName, int row, int count) {
+		BufferedImage[] animation = new BufferedImage[count];
+		for(int i = 0; i < count; i++) {
+			animation[i] = this.getImg(sheetName + "(" + row + "," + i + ")");
+		}
+		this.animationCollection.put(aniName, animation);
+	}
+	
+	/**
+	 * gets the animation array from the collection
+	 * @param name
+	 * @return
+	 */
+	public BufferedImage[] getAnimation(String name) {
+		return animationCollection.get(name);
+	}
 }
