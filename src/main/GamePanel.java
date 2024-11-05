@@ -24,6 +24,7 @@ public class GamePanel extends JPanel {
 	private int aniTick = 0; //1 tick = 1 frame
 	private int aniIndex = 0; //controls which sprite to display
 	private int ANI_SPEED = 20; //contols ticks per update
+	
 	/**
 	 * Default constructor for GamePanel. Initializes input listeners.
 	 * Graphics are initialized separately in paintComponent,
@@ -78,7 +79,6 @@ public class GamePanel extends JPanel {
 		/*Calls JPanel's (super method) own paintComponent 
 		 * object to take care of initialization.*/
 		super.paintComponent(g);
-		updateAnimationTick(); //update ani tick variables
 		/* img, xpos, ypos, width, height, observer */
 		g.drawImage(models.getSprite("player").animation()
 						[aniIndex%(models.getSprite("player").animation()).length], 
@@ -86,8 +86,11 @@ public class GamePanel extends JPanel {
 					models.getSprite("player").yPos(),
 					128, 80, null);
 	}
-
-	private void updateAnimationTick() {
+	
+	/**
+	 * update aniTick variables
+	 */
+	public void updateAnimationTick() {
 		aniTick++;
 		if(aniTick >= ANI_SPEED) {
 			aniTick = 0;

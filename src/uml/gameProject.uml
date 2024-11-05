@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_omm40Jb7Ee-KmZ2n8KXWUA" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_omm40Zb7Ee-KmZ2n8KXWUA" source="codegen">
         <details xmi:id="_omm40pb7Ee-KmZ2n8KXWUA" key="codegenDirectory" value="/gameProject/src"/>
-        <details xmi:id="_qMNksJb7Ee-KmZ2n8KXWUA" key="AssociatedSourceCode" value="/gameProject/src/inputs/KeyboardInputs.java;795932341/1;/gameProject/src/inputs/MouseInputs.java;2366548676/1;/gameProject/src/main/Game.java;3962721913/1;/gameProject/src/main/GamePanel.java;873227549/1;/gameProject/src/main/GameWindow.java;3352340067/1;/gameProject/src/main/Images.java;1289160683/1;/gameProject/src/main/MainClass.java;710227733/1;/gameProject/src/models/Model.java;619694098/1;/gameProject/src/models/Models.java;63804383/1;/gameProject/src/models/Player.java;3263025189/1;/gameProject/src/models/Sprite.java;36848212/1;"/>
+        <details xmi:id="_qMNksJb7Ee-KmZ2n8KXWUA" key="AssociatedSourceCode" value="/gameProject/src/inputs/KeyboardInputs.java;795932341/1;/gameProject/src/inputs/MouseInputs.java;2366548676/1;/gameProject/src/main/Game.java;2316210606/1;/gameProject/src/main/GamePanel.java;1712202543/1;/gameProject/src/main/GameWindow.java;3352340067/1;/gameProject/src/main/Images.java;1289160683/1;/gameProject/src/main/MainClass.java;710227733/1;/gameProject/src/models/Model.java;619694098/1;/gameProject/src/models/Models.java;63804383/1;/gameProject/src/models/Player.java;3416951793/1;/gameProject/src/models/Sprite.java;36848212/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_ortbQJb7Ee-KmZ2n8KXWUA">
@@ -64,7 +64,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_oruCUpb7Ee-KmZ2n8KXWUA" name="main">
       <packagedElement xmi:type="uml:Class" xmi:id="_osFOsJb7Ee-KmZ2n8KXWUA" name="Game">
-        <ownedComment xmi:id="_nA0sVZczEe-KmZ2n8KXWUA">
+        <ownedComment xmi:id="_16Ck8Zu1Ee-mq_FjeufjMw">
           <body>Constructs the game, and brings together components of the
 game to one place.
 
@@ -77,6 +77,10 @@ game to one place.
         <ownedAttribute xmi:id="_osmzKJb7Ee-KmZ2n8KXWUA" name="FPS_SET" visibility="private" isLeaf="true" isReadOnly="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_osnaMJb7Ee-KmZ2n8KXWUA" value="120"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_xLMmYJroEe-KmZ2n8KXWUA" name="UPS_SET" visibility="private" isLeaf="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_xLNNcJroEe-KmZ2n8KXWUA" value="200"/>
         </ownedAttribute>
         <interfaceRealization xmi:id="_oskW5pb7Ee-KmZ2n8KXWUA" client="_osFOsJb7Ee-KmZ2n8KXWUA" supplier="_oskW5Jb7Ee-KmZ2n8KXWUA" contract="_oskW5Jb7Ee-KmZ2n8KXWUA"/>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_osp2epb7Ee-KmZ2n8KXWUA" name="Game" specification="_osF1wJb7Ee-KmZ2n8KXWUA">
@@ -100,55 +104,94 @@ game to one place.
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_osp2fZb7Ee-KmZ2n8KXWUA" name="run" specification="_osF1xZb7Ee-KmZ2n8KXWUA">
           <language>java</language>
           <body>double timePerFrame = 1000000000.0 / FPS_SET; //time per frame in nanoseconds
-		long lastFrameTime = System.nanoTime(); //time of previous refresh
-		long timeNow = System.nanoTime(); //current time
+		double timePerUpdate = 1000000000.0 / UPS_SET; //time per update in nanoseconds
+
+		long previousTime = System.nanoTime(); //time at last check
 		
 		int frames = 0; //FPS count
+		int updates = 0; //UPS count
 		long lastCheckTime = System.currentTimeMillis(); //last FPS check time		
 
+		/*updates needed, keeps track of updates missed*/
+		double deltaU = 0; 
+		/*frames needed, keeps track of frames missed*/
+		double deltaF = 0;
+		
 		while(true){ //infinite loop
+
+			long currentTime = System.nanoTime(); //time now
 			
-			timeNow = System.nanoTime(); //keep track of time
-			/*
-			 * loop for gamePanel refresh
+			/* 
+			 * will = 1.0 when it is exactly time to update,
+			 * will be &lt; 1.0 when not yet updating, 
+			 * and will be > 1.0 when it is past time to update.
 			 */
-			if(timeNow - lastFrameTime >= timePerFrame) { //if time for next
-				gamePanel.repaint(); //refresh
-				lastFrameTime = System.nanoTime(); //update last frame time
-				frames++; //add 1 frame to total frames
+			deltaU += (currentTime - previousTime) / timePerUpdate;
+			deltaF += (currentTime - previousTime) / timePerFrame;
+			previousTime = currentTime; //reset delta
+			
+			/*
+			 * loop for logic tick updates, refreshes when 
+			 * the difference of updates has reached 1
+			 */
+			if(deltaU >= 1) {
+				update();
+				updates++; //count 1 update
+				deltaU--; //subtract one deltaU
 			}
 			
 			/*
-			 * loop for FPS count
+			 * loop for gamePanel refresh, refreshes when
+			 * the difference of frames has reached 1.
+			 */
+			if(deltaF >= 1) {
+				gamePanel.repaint(); //re-render
+				frames++; //count 1 frame
+				deltaF--; //subtract one deltaF
+			}
+			
+			/*
+			 * loop for FPS | UPS count
 			 */
 			if(System.currentTimeMillis() - lastCheckTime >= 1000) { //1s since last check
 				lastCheckTime = System.currentTimeMillis(); //reset lastCheckTime
-				System.out.println(&quot;FPS: &quot; + frames); //display FPS
+				System.out.println(&quot;FPS: &quot; + frames + &quot; | UPS: &quot; + updates); //display FPS
 				frames = 0; //reset frames
+				updates = 0; //reset updates
 			}
 			
 		}
 		
 	</body>
         </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_16Ck8Ju1Ee-mq_FjeufjMw" name="update" specification="_0znvcJu1Ee-mq_FjeufjMw">
+          <language>java</language>
+          <body>gamePanel.updateAnimationTick();
+	</body>
+        </ownedBehavior>
         <ownedOperation xmi:id="_osF1wJb7Ee-KmZ2n8KXWUA" name="Game" method="_osp2epb7Ee-KmZ2n8KXWUA">
           <eAnnotations xmi:id="_osF1wZb7Ee-KmZ2n8KXWUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_osF1wpb7Ee-KmZ2n8KXWUA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_nA0sVpczEe-KmZ2n8KXWUA">
+          <ownedComment xmi:id="_16Ck8pu1Ee-mq_FjeufjMw">
             <body>Constructor for the game, creates JPanel and JFrame</body>
           </ownedComment>
           <ownedParameter xmi:id="_osF1w5b7Ee-KmZ2n8KXWUA" type="_osFOsJb7Ee-KmZ2n8KXWUA" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_osF1xJb7Ee-KmZ2n8KXWUA" name="startGameLoop" visibility="private" method="_osp2fJb7Ee-KmZ2n8KXWUA">
-          <ownedComment xmi:id="_nA0sV5czEe-KmZ2n8KXWUA">
+          <ownedComment xmi:id="_16DMAJu1Ee-mq_FjeufjMw">
             <body>starts the game loop a new thread gameThread</body>
           </ownedComment>
         </ownedOperation>
         <ownedOperation xmi:id="_osF1xZb7Ee-KmZ2n8KXWUA" name="run" method="_osp2fZb7Ee-KmZ2n8KXWUA"/>
+        <ownedOperation xmi:id="_0znvcJu1Ee-mq_FjeufjMw" name="update" visibility="private" method="_16Ck8Ju1Ee-mq_FjeufjMw">
+          <ownedComment xmi:id="_16DMAZu1Ee-mq_FjeufjMw">
+            <body>updates to do that rely on tick</body>
+          </ownedComment>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_osGc0Jb7Ee-KmZ2n8KXWUA" name="GamePanel">
-        <ownedComment xmi:id="_8fJVcJc7Ee-KmZ2n8KXWUA">
+        <ownedComment xmi:id="_F9NRIJu3Ee-mq_FjeufjMw">
           <body>GamePanel is an extension of a JPanel object that allows 
 for objects to be painted on the screen. For GamePanel to
 show, it has to be added to a GameWindow first.
@@ -197,7 +240,6 @@ show, it has to be added to a GameWindow first.
           <body>/*Calls JPanel's (super method) own paintComponent 
 		 * object to take care of initialization.*/
 		super.paintComponent(g);
-		updateAnimationTick(); //update ani tick variables
 		/* img, xpos, ypos, width, height, observer */
 		g.drawImage(models.getSprite(&quot;player&quot;).animation()
 						[aniIndex%(models.getSprite(&quot;player&quot;).animation()).length], 
@@ -227,7 +269,7 @@ show, it has to be added to a GameWindow first.
           <eAnnotations xmi:id="_osGc0pb7Ee-KmZ2n8KXWUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_osGc05b7Ee-KmZ2n8KXWUA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_8fJVcZc7Ee-KmZ2n8KXWUA">
+          <ownedComment xmi:id="_F9NRIZu3Ee-mq_FjeufjMw">
             <body>Default constructor for GamePanel. Initializes input listeners.
 	 * Graphics are initialized separately in paintComponent,
 	 * JPanel's own constructor.</body>
@@ -235,7 +277,7 @@ show, it has to be added to a GameWindow first.
           <ownedParameter xmi:id="_osGc1Jb7Ee-KmZ2n8KXWUA" type="_osGc0Jb7Ee-KmZ2n8KXWUA" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_osk98Jb7Ee-KmZ2n8KXWUA" name="paintComponent" method="_osqdg5b7Ee-KmZ2n8KXWUA">
-          <ownedComment xmi:id="_8fJVc5c7Ee-KmZ2n8KXWUA">
+          <ownedComment xmi:id="_F9NRI5u3Ee-mq_FjeufjMw">
             <body>Called on initialization of JPanel, used to draw  items
 	 * on the screen. Graphics component allows us to draw to
 	 * the panel. Method used to update the game panel!! 
@@ -245,13 +287,17 @@ show, it has to be added to a GameWindow first.
           <ownedParameter xmi:id="_osk98Zb7Ee-KmZ2n8KXWUA" name="g" type="_ose3UZb7Ee-KmZ2n8KXWUA"/>
         </ownedOperation>
         <ownedOperation xmi:id="_nAzeMJczEe-KmZ2n8KXWUA" name="setPanelSize" visibility="private" method="_nA0sUpczEe-KmZ2n8KXWUA">
-          <ownedComment xmi:id="_8fJVcpc7Ee-KmZ2n8KXWUA">
+          <ownedComment xmi:id="_F9NRIpu3Ee-mq_FjeufjMw">
             <body>Sets the size of the JPanel object, not setting window size in 
 	 * JFrame since that will include the top bar height if initialized
 	 * in JFrame.</body>
           </ownedComment>
         </ownedOperation>
-        <ownedOperation xmi:id="_j70bgJc5Ee-KmZ2n8KXWUA" name="updateAnimationTick" visibility="private" method="_oynyYJc5Ee-KmZ2n8KXWUA"/>
+        <ownedOperation xmi:id="_j70bgJc5Ee-KmZ2n8KXWUA" name="updateAnimationTick" visibility="public" method="_oynyYJc5Ee-KmZ2n8KXWUA">
+          <ownedComment xmi:id="_F9NRJJu3Ee-mq_FjeufjMw">
+            <body>update aniTick variables</body>
+          </ownedComment>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_osHD4Jb7Ee-KmZ2n8KXWUA" name="GameWindow">
         <ownedComment xmi:id="_nA0sXJczEe-KmZ2n8KXWUA">
@@ -867,7 +913,7 @@ functions that characters have
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_osKHMJb7Ee-KmZ2n8KXWUA" name="Player">
-        <ownedComment xmi:id="_XT0R0Jc8Ee-KmZ2n8KXWUA">
+        <ownedComment xmi:id="_ahUIkJc8Ee-KmZ2n8KXWUA">
           <body>Object for the main character of the game
 
 @author williamcheng</body>
@@ -919,7 +965,7 @@ functions that characters have
           <eAnnotations xmi:id="_osKHPJb7Ee-KmZ2n8KXWUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_osKHPZb7Ee-KmZ2n8KXWUA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_XT0R0Zc8Ee-KmZ2n8KXWUA">
+          <ownedComment xmi:id="_ahUIkZc8Ee-KmZ2n8KXWUA">
             <body>Constructor for the player, sets up sprite object and loads all states from 
 	 * sprite sheet into the images object
 	 * @param name - name of the Sprite
@@ -944,7 +990,7 @@ functions that characters have
         <ownedOperation xmi:id="_ICVJwJcFEe-KmZ2n8KXWUA" name="moveRight" method="_ICVJyJcFEe-KmZ2n8KXWUA"/>
         <ownedOperation xmi:id="_ICVJw5cFEe-KmZ2n8KXWUA" name="moveLeft" method="_ICVJyZcFEe-KmZ2n8KXWUA"/>
         <ownedOperation xmi:id="_jcUOUJc0Ee-KmZ2n8KXWUA" name="loadAnimations" visibility="private" method="_VtfxEJc4Ee-KmZ2n8KXWUA">
-          <ownedComment xmi:id="_XT0R0pc8Ee-KmZ2n8KXWUA">
+          <ownedComment xmi:id="_ahUIkpc8Ee-KmZ2n8KXWUA">
             <body>Construct animation arrays for the sprite</body>
           </ownedComment>
         </ownedOperation>
@@ -1343,4 +1389,5 @@ game.
   <UMLLabProfile:LegacyStyledElement xmi:id="_GNffgZc7Ee-KmZ2n8KXWUA" base_Element="_GNffgJc7Ee-KmZ2n8KXWUA"/>
   <UMLLabProfile:Array xmi:id="_cZvfQZc7Ee-KmZ2n8KXWUA" base_Element="_GNffgJc7Ee-KmZ2n8KXWUA"/>
   <UMLLabProfile:Array xmi:id="_lfimI5c7Ee-KmZ2n8KXWUA" base_Element="_lfimIJc7Ee-KmZ2n8KXWUA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_xLNNcZroEe-KmZ2n8KXWUA" base_Element="_xLMmYJroEe-KmZ2n8KXWUA"/>
 </xmi:XMI>
